@@ -11,7 +11,11 @@ export default function Navbar() {
   function toggleNavbar() {
     setToggleNav(!ToggleNav);
   }
-
+  const closeNavbar = () => {
+    if (ToggleNav) {
+      setToggleNav(false);
+    }
+  };
   return (
     <nav className="bg-transparent w-3/4 m-auto absolute top-0 z-20 left-0 right-0">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -74,12 +78,17 @@ export default function Navbar() {
             <div>
               <ul className="font-normal flex flex-col p-4 md:p-0 md:flex-row md:space-x-6 rtl:space-x-reverse text-sm">
                 <li>
-                  <Link to="/" className="block px-3 py-2 text-white text-sm">
+                  <Link
+                    onClick={closeNavbar}
+                    to="/"
+                    className="block px-3 py-2 text-white text-sm"
+                  >
                     Home
                   </Link>
                 </li>
                 <li>
                   <Link
+                    onClick={closeNavbar}
                     to="about"
                     className="block px-3 py-2 text-white text-sm"
                   >
@@ -88,6 +97,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <Link
+                    onClick={closeNavbar}
                     to={`/services/1`}
                     className="block px-3 py-2 text-white text-sm"
                   >
@@ -96,6 +106,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <Link
+                    onClick={closeNavbar}
                     to="Projects"
                     className="block px-3 py-2 text-white text-sm"
                   >
