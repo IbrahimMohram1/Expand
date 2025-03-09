@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { useContext } from "react";
 import { ContextData } from "../Context/ContextData";
 import SwiperServices from "../ServicesSwiper/SwiperServices";
+import { Link } from "react-router-dom";
 export default function Services() {
   let { GetServices, Services } = useContext(ContextData);
   useEffect(() => {
@@ -18,9 +19,9 @@ export default function Services() {
               <h2 className="mainColor">Our Services</h2>
             </div>
             <div>
-              <a href="#" className="mainColor mt-3 text-sm">
-                Discover more →
-              </a>
+              <Link to={`/services/1`}>
+                <p className="mainColor mt-3 text-sm">Discover more →</p>
+              </Link>
             </div>
           </div>
           <p className="text-xs">

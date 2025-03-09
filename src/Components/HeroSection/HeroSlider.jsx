@@ -4,6 +4,7 @@ import HeroImage from "../../assets/unsplash_9cCeS9Sg6nU.png";
 import { useContext } from "react";
 import { ContextData } from "../Context/ContextData";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 export default function HeroSection() {
   return (
     <section className="w-full min-h-screen flex flex-col justify-center">
@@ -27,9 +28,11 @@ export default function HeroSection() {
               Expand Trading Co. – Your Trusted Partner in Electrical, Safety,
               Marine, and Logistics Solutions since 2015.
             </p>
-            <button className="bg-[#D74D1E] text-white py-3 px-6 rounded-md hover:bg-[#c6451a] transition duration-300">
-              Discover More
-            </button>
+            <Link to={"/about"}>
+              <button className="bg-[#D74D1E] text-white py-3 px-6 rounded-md hover:bg-[#c6451a] transition duration-300">
+                Discover More
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -74,7 +74,7 @@ export default function Navbar() {
             <div>
               <ul className="font-normal flex flex-col p-4 md:p-0 md:flex-row md:space-x-6 rtl:space-x-reverse text-sm">
                 <li>
-                  <Link to="" className="block px-3 py-2 text-white text-sm">
+                  <Link to="/" className="block px-3 py-2 text-white text-sm">
                     Home
                   </Link>
                 </li>
