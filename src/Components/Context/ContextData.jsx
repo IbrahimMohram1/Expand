@@ -11,28 +11,28 @@ export default function DataProvider({ children }) {
   const [Mission, setMission] = useState([]);
 
   async function GetData() {
-    const { data } = await axios.get("/data.json");
+    const { data } = await axios.get("./data.json");
     setExpandData(data.sectionsMission);
   }
   async function GetCounter() {
-    const { data } = await axios.get("/data.json");
+    const { data } = await axios.get("./data.json");
     setCounterData(data.CounterData);
   }
   async function GetServices() {
-    const { data } = await axios.get("/data.json");
+    const { data } = await axios.get("./data.json");
     setServices(data.Services);
   }
 
   async function TrustedBy() {
-    const { data } = await axios.get("/data.json");
+    const { data } = await axios.get("./data.json");
     setTrustedBy(data.trustedBy);
   }
   async function GetPrjocts() {
-    const { data } = await axios.get("/data.json");
+    const { data } = await axios.get("./data.json");
     setProjects(data.Projects);
   }
   async function MissionAndVision() {
-    const { data } = await axios.get("/data.json");
+    const { data } = await axios.get("./data.json");
     setMission(data.OurVisionAndMission);
   }
   return (
