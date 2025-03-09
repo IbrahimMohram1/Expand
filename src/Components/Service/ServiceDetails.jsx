@@ -22,7 +22,7 @@ export default function Service() {
       <h2 className="mainColor text-2xl my-3 text-center">Our Services</h2>
 
       <div className="w-[85%] mx-auto">
-        <div className="grid grid-cols-2 gap-2">
+        <div className="grid grid-cols-2 gap-2 md:grid-cols-6 lg:grid-cols-12">
           {Services.length > 0 ? (
             Services.map((service) => (
               <div
