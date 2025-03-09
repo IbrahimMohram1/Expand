@@ -10,7 +10,7 @@ export default function Projects() {
   return (
     <>
       <div className="container my-5 mt-14">
-        <div className=" mx-auto">
+        <div className=" w-[80%] mx-auto">
           <div className="flex justify-between items-center">
             <div>
               <h2 className="mainColor">Our Projects</h2>
