@@ -95,7 +95,7 @@ export default function Home() {
       <Services />
 
       <div className="container my-9 mb-16">
-        <div className=" mx-auto">
+        <div className=" w-[80%] mx-auto">
           <div className="flex flex-col md:flex-row gap-y-12 justify-center items-center ">
             <div className="md:w-1/2 w-full">
               <div className="relative w-full max-w-md  right-0 flex justify-center">
@@ -110,7 +110,7 @@ export default function Home() {
                 <img
                   src={shunk2}
                   alt="foreground"
-                  className="absolute top-16 left-16 md:left-20 w-36 md:w-48 lg:w-64 h-auto rounded-lg border-4  border-white shadow-lg"
+                  className="absolute top-24 left-28 md:left-20 w-36 md:w-48 lg:w-64 h-auto rounded-lg border-4  border-white shadow-lg"
                 />
               </div>
             </div>
