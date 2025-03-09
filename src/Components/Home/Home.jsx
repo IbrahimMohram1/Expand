@@ -150,10 +150,9 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <Projects />
         </div>
       </div>
-
-      <Projects />
     </>
   );
 }
