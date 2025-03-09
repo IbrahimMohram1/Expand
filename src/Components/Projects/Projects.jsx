@@ -9,7 +9,7 @@ export default function Projects() {
   }, [Projects]);
   return (
     <>
-      <div className="container my-5">
+      <div className="container my-5 mt-14">
         <div className=" mx-auto">
           <div className="flex justify-between items-center">
             <div>

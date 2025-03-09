@@ -110,7 +110,7 @@ export default function Home() {
                 <img
                   src={shunk2}
                   alt="foreground"
-                  className="absolute top-24 left-28 md:left-32 md:top-32 w-44 md:w-48 lg:w-64 h-auto rounded-lg border-4  border-white shadow-lg"
+                  className="absolute top-24 left-28 md:left-32 md:top-14 w-56 md:w-48 lg:w-64 h-auto rounded-lg border-4  border-white shadow-lg"
                 />
               </div>
             </div>
