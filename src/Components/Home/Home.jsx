@@ -93,7 +93,7 @@ export default function Home() {
       <Services />
 
       <div className="container my-9 mb-16">
-        <div className="w-3/4 mx-auto">
+        <div className=" mx-auto">
           <div className="flex flex-col md:flex-row gap-y-12 justify-center items-center ">
             <div className="md:w-1/2 w-full">
               <div className="relative w-full max-w-md  right-0">

@@ -5,7 +5,7 @@ export default function SecSection({ image, who, p }) {
   return (
     <>
       <div className="container my-5">
-        <div className="w-[90%] m-auto ">
+        <div className=" m-auto ">
           <div className="flex justify-center items-start md:flex-row flex-col  gap-x-2">
             <div className="w-1/2 my-1 ">
               <img src={image} className=" w-full  h-screen rounded-xl" />

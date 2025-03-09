@@ -12,7 +12,7 @@ export default function SwiperProjects() {
 
   return (
     <>
-      <div className="w-[85%] mx-auto">
+      <div className="container mx-auto">
         <div className="relative overflow-hidden">
           <Swiper
             className="my-5 overflow-hidden"
