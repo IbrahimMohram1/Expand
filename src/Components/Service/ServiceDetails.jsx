@@ -22,11 +22,11 @@ export default function Service() {
       <h2 className="mainColor text-2xl my-3 text-center">Our Services</h2>
 
       <div className="w-[85%] mx-auto">
-        <div className="flex justify-center md:flex-row ">
+        <div className="flex justify-center md:flex-row flex-col ">
           {Services.length > 0 ? (
             Services.map((service) => (
               <Link to={`/services/${service.id}`} key={service.id}>
-                <div className="w-full mx-2 my-2 text-nowrap">
+                <div className="w-full mx-2 my-2 text-nowrap md:w-1/2">
                   <p className="text-xs">{service.title}</p>
                 </div>
               </Link>
