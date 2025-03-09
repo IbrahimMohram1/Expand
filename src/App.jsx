@@ -1,12 +1,11 @@
 import { useState } from "react";
 
 import "./App.css";
-import Navbar from "./Components/Navbar/Navbar";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import Layout from "./Components/Layout/Layout";
 import DataProvider from "./Components/Context/ContextData";
-import AboutUs from "./Components/AboutUs/aboutUs";
+import AboutUs from "./Components/AboutUs/AboutUs";
 import Service from "./Components/Service/ServiceDetails";
 import Projects from "./Components/ProjectsPage/Projects";
 
