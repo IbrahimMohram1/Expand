@@ -37,7 +37,7 @@ export default function Footer() {
                   <Link to={"/about"}>
                     <li>About Us</li>
                   </Link>
-                  <Link to={`/services/:1`}>
+                  <Link to={`/services/1`}>
                     {" "}
                     <li>Services</li>
                   </Link>
