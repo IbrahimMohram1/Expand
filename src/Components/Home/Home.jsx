@@ -125,9 +125,12 @@ export default function Home() {
               >
                 <div className="  max-w-md p-5 ">
                   {/* المحتوى */}
-                  <h2 className="text-2xl font-bold mainColor">
-                    Why Choose Us{" "}
-                  </h2>
+                  <Link to={"/about"}>
+                    <h2 className="text-2xl font-bold mainColor">
+                      Why Choose Us{" "}
+                    </h2>
+                  </Link>
+
                   <p className="mt-2 text-black text-sm">
                     With a legacy of excellence since 2015, Expand Trading Co.
                     delivers tailored solutions that solve challenges, build

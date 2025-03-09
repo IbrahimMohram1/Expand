@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { ContextData } from "../Context/ContextData";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
   let { GetPrjocts, Projects } = useContext(ContextData);
@@ -15,9 +16,9 @@ export default function Projects() {
               <h2 className="mainColor">Our Projects</h2>
             </div>
             <div>
-              <a href="#" className="mainColor mt-3 text-sm">
-                Discover more →
-              </a>
+              <Link to={"/Projects"}>
+                <h2 className="mainColor mt-3 text-sm">Discover more →</h2>
+              </Link>
             </div>
           </div>
           <p className="text-xs my-3">
