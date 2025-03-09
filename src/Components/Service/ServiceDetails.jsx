@@ -7,14 +7,14 @@ import { Link, useParams } from "react-router-dom";
 export default function Service() {
   let { GetServices, Services } = useContext(ContextData);
   let { id } = useParams();
-  const service = Services?.find((service) => service.id === parseInt(id));
+  const service = Services.find((service) => service.id === parseInt(id));
 
   if (!service) {
-    return <div>Service not found</div>; // إذا لم يتم العثور على الخدمة
+    return <div>Service not found!</div>; // إذا لم يتم العثور على الخدمة
   }
   useEffect(() => {
     GetServices();
-  }, [Services, service]);
+  }, [Services]);
   return (
     <>
       <MainSection image={MainImage} text="Services" />
@@ -22,26 +22,23 @@ export default function Service() {
       <h2 className="mainColor text-2xl my-3 text-center">Our Services</h2>
 
       <div className="w-[85%] mx-auto">
-        <div className="grid grid-cols-2 gap-2 md:grid-cols-6 lg:grid-cols-12">
+        <div className="flex justify-center md:flex-row  flex-col  text-center">
           {Services.length > 0 ? (
             Services.map((service) => (
-              <div
-                key={service.id}
-                className="text-nowrap flex justify-between items-center"
-              >
-                <Link to={`/services/${service.id}`}>
-                  <p className="text-xs">{service.title}</p>
-                </Link>
-              </div>
+              <Link to={`/services/${service.id}`} key={service.id}>
+                <div className="md:w-full mx-2 my-2 text-nowrap  flex-wrap flex justify-center items-center">
+                  <p className="text-xs text-center">{service.title}</p>
+                </div>
+              </Link>
             ))
           ) : (
-            <p>No Services Found</p>
+            <p>No Services Found </p>
           )}
         </div>
       </div>
       <SwiperServices />
       <div className="container my-5">
-        <div className="w-[75%] mx-auto">
+        <div className="md:w-[75%] w-full mx-auto">
           <div className="flex justify-center items-stretch md:flex-row flex-col gap-4">
             <div className="md:w-1/2 w-full">
               <img
@@ -61,7 +58,7 @@ export default function Service() {
                 <h2 className="text-lg font-semibold mb-2 mainColor">
                   What We Offer:
                 </h2>
-                <ul className="list-disc pl-5 text-sm text-nowrap my-3">
+                <ul className="list-disc pl-5 md:text-sm md:text-nowrap text-xs  my-3">
                   {service.whatWeOffer.map((item, index) => (
                     <li key={index} className="text-gray-600 my-3">
                       {item}

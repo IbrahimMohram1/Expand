@@ -61,7 +61,7 @@ export default function SwiperServices() {
     ],
   };
   return (
-    <div className="container mx-auto my-5">
+    <div className="container mx-auto my-5 overflow-hidden">
       <div className=" flex justify-center items-center ">
         <Slider {...settings}>
           {Services.length > 0 ? (
