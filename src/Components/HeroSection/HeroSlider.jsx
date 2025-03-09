@@ -35,7 +35,7 @@ export default function HeroSection() {
       </div>
 
       {/* الـ HR والعناصر التحتية */}
-      <div className="absolute  z-10 w-[90%]  md:w-[80%] mx-auto pb-8 md:bottom-14 bottom-6 flex justify-center ">
+      <div className="relative  z-10 w-[90%]  md:w-[80%] mx-auto pb-8 md:bottom-14 bottom-6 ">
         <hr className="h-[.75px] bg-slate-200" />
         <div className="flex  md:flex-row justify-between items-center gap-4 mt-4">
           <div className="flex items-center gap-x-2 text-white">
