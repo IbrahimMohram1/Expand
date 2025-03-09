@@ -7,14 +7,14 @@ import { Link, useParams } from "react-router-dom";
 export default function Service() {
   let { GetServices, Services } = useContext(ContextData);
   let { id } = useParams();
-  const service = Services.find((service) => service.id === parseInt(id));
+  const service = Services?.find((service) => service.id === parseInt(id));
 
   if (!service) {
-    return <div>Service not found!</div>; // إذا لم يتم العثور على الخدمة
+    return <div>Service not found</div>; // إذا لم يتم العثور على الخدمة
   }
   useEffect(() => {
     GetServices();
-  }, [Services]);
+  }, [Services, service]);
   return (
     <>
       <MainSection image={MainImage} text="Services" />
@@ -25,8 +25,11 @@ export default function Service() {
         <div className="flex justify-center md:flex-row flex-col ">
           {Services.length > 0 ? (
             Services.map((service) => (
-              <div className="w-full mx-2 my-2 text-nowrap md:w-1/2">
-                <Link to={`/services/${service.id}`} key={service.id}>
+              <div
+                key={service.id}
+                className="w-1/2 mx-2 my-2 text-nowrap md:w-1/2 flex justify-between items-center"
+              >
+                <Link to={`/services/${service.id}`}>
                   <p className="text-xs">{service.title}</p>
                 </Link>
               </div>
