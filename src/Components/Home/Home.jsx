@@ -103,7 +103,7 @@ export default function Home() {
                 <img
                   src={shunk}
                   alt="background"
-                  className="w-3/4 h-auto rounded-lg "
+                  className="md:w-3/4 h-auto rounded-lg w-full "
                 />
 
                 {/* الصورة الصغيرة فوقها */}
