@@ -17,7 +17,10 @@ export default function TrustedBy() {
           <div className="flex justify-center items-center md:flex-row flex-col text-center">
             {TrustedByData.length > 0 ? (
               TrustedByData.map((client, index) => (
-                <div key={index} className="md:w-1/6 w-full">
+                <div
+                  key={index}
+                  className="md:w-1/6 w-full flex justify-center items-center gap-y-4"
+                >
                   <img
                     src={client.image}
                     className="w-1/2 grayscale hover:grayscale-0 "

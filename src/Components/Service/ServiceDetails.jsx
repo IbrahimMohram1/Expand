@@ -25,11 +25,11 @@ export default function Service() {
         <div className="flex justify-center md:flex-row flex-col ">
           {Services.length > 0 ? (
             Services.map((service) => (
-              <Link to={`/services/${service.id}`} key={service.id}>
-                <div className="w-full mx-2 my-2 text-nowrap md:w-1/2">
+              <div className="w-full mx-2 my-2 text-nowrap md:w-1/2">
+                <Link to={`/services/${service.id}`} key={service.id}>
                   <p className="text-xs">{service.title}</p>
-                </div>
-              </Link>
+                </Link>
+              </div>
             ))
           ) : (
             <p>No Services Found </p>
@@ -40,14 +40,14 @@ export default function Service() {
       <div className="container my-5">
         <div className="w-[75%] mx-auto">
           <div className="flex justify-center items-stretch md:flex-row flex-col gap-4">
-            <div className="w-1/2">
+            <div className="md:w-1/2 w-full">
               <img
                 src={service.image}
                 alt={service.title}
                 className="w-full h-full object-cover rounded-lg" // جعل الصورة تأخذ الارتفاع الكامل
               />
             </div>
-            <div className="w-1/2">
+            <div className="md:w-1/2 w-full">
               <div className="h-full">
                 {" "}
                 {/* جعل العنصر يأخذ الارتفاع الكامل */}
