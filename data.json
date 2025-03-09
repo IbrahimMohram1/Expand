@@ -1,0 +1,268 @@
+{
+  
+  "sectionsMission": [
+    {
+      "title": "Our Vision",
+      "content": "To be a global pioneer in delivering cutting-edge, customized solutions that inspire confidence and drive success. We strive to exceed expectations by adapting to dynamic market demands, setting new benchmarks for innovation, sustainability, and excellence."
+    },
+    {
+      "title": "Our Mission",
+      "content": "To lead the market with fully integrated, client-centric solutions that redefine quality and innovation. We are committed to addressing unique challenges and goals through exceptional service, continuous improvement, and building trusted, long-term partnerships."
+    }
+  ],
+  "CounterData": 
+    [
+  {
+    "icon": "TbActivityHeartbeat",
+    "value": "200+",
+    "label": "Clients Annually"
+  },
+  {
+    "icon": "TbActivityHeartbeat",
+    "value": "15000+",
+    "label": "Products Yearly"
+  },
+  {
+    "icon": "TbActivityHeartbeat",
+    "value": "98%",
+    "label": "Customer Satisfaction"
+  },
+  {
+    "icon": "TbActivityHeartbeat",
+    "value": "250+",
+    "label": "Global Reach"
+  },
+  {
+    "icon": "TbActivityHeartbeat",
+    "value": "150+",
+    "label": "Projects Annually"
+  }
+],
+
+"Services": [
+  {
+    "id": 1,
+    "title": "Electrical Solutions",
+    "icon": "MdElectricBolt",
+    "image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",
+    "description": "Electrical systems are the foundation of modern living and industry. They enable the functionality of homes, businesses, and factories, ensuring seamless operations and convenience. Reliable electrical systems minimize downtime, improve energy efficiency, and enhance safety, protecting people and assets. Whether for lighting, powering machinery, or maintaining critical systems, well-maintained electrical infrastructure is vital for both productivity and security. Moreover, efficient electrical solutions contribute to sustainability by reducing energy wastage and optimizing power usage.",
+    "whatWeOffer": [
+      "Generator systems, LED lighting, and code corrections.",
+      "Parking lot lighting and medical office installations.",
+      "Electrical outlets, switches, and service upgrades.",
+      "Renovations and additions for electrical systems.",
+      "New construction and custom home wiring.",
+      "Interior decorative custom lighting."
+
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Safety & Security",
+    "icon": "MdSecurity",
+    "image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",
+    "description": "Our safety and security solutions ensure the protection of your assets and personnel.",
+    "whatWeOffer": [
+      "CCTV installation",
+      "Access control systems",
+      "Fire alarm systems"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Airport System",
+    "icon": "GiCommercialAirplane",
+    "image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",
+    "description": "We specialize in advanced airport systems to enhance operational efficiency and passenger experience.",
+    "whatWeOffer": [
+      "Baggage handling systems",
+      "Passenger boarding bridges",
+      "Air traffic control systems"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Marine Equipment",
+    "icon": "FaShip",
+    "image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",
+    "description": "We offer state-of-the-art marine equipment for shipping and offshore industries.",
+    "whatWeOffer": [
+      "Navigation systems",
+      "Marine communication systems",
+      "Offshore equipment"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "EV Solutions",
+    "icon": "FaChargingStation",
+    "image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",
+    "description": "We provide cutting-edge electric vehicle (EV) charging solutions.",
+    "whatWeOffer": [
+      "EV charging stations",
+      "Battery management systems",
+      "Smart charging solutions"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Tech Solutions",
+    "icon": "FaBarcode",
+    "image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",
+    "description": "Our tech solutions streamline operations and enhance productivity.",
+    "whatWeOffer": [
+      "Barcode systems",
+      "Inventory management",
+      "Automation solutions"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Storage Solutions",
+    "icon": "MdSdStorage",
+    "image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",
+    "description": "We offer reliable storage solutions for data and physical assets.",
+    "whatWeOffer": [
+      "Data storage systems",
+      "Warehouse management",
+      "Cloud storage solutions"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Workshop Tools",
+    "icon": "FaChargingStation",
+    "image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",
+    "description": "We supply high-quality tools for workshops and industrial use.",
+    "whatWeOffer": [
+      "Power tools",
+      "Hand tools",
+      "Safety equipment"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Power & Equipment",
+    "icon": "MdPower",
+    "image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",
+    "description": "We provide robust power solutions and equipment for various industries.",
+    "whatWeOffer": [
+      "Generators",
+      "Power distribution systems",
+      "Renewable energy solutions"
+    ]
+  }
+],
+"trustedBy":[
+  {
+    "image":"https://s3-alpha-sig.figma.com/img/a9bc/fec0/4bc4f61325ace76d01591fc65479dc38?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=DhNB0YctLjASKGFaG51g15AiL6PSklabW43tHKOzCj4NpENzm93QajJ9Q6uamQmqXVGx2ZabR~IuhLE8pdiV19FgwHLYz4KESq21QQwHySdQ1f8EWgOSR5XeukR7UT7eqboSNspN-hb7u2vqaCpSBg~ehkD6NehZYLNYdv2QRNHUXkJxEYYaZJz0i9kXtjr9N5hInAHJeIAkQGDg356H6pzNmOFoByWyff8wITrQn4yAUHYNifECGWXIueF87--7-dfGoy24~Qf9p4JBmG5UqELvTbSHn-RAJFYqdeLscqOVcsW26uIy8-S0382as7awanWmEDslNb6kiGy-IgJ4yw__"
+  },
+  
+  {
+    "image":"https://s3-alpha-sig.figma.com/img/e2cd/2353/e2e2aa715b2e41e6d59d50cd8b0344c6?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=mRMsypMNbA4smeDI~THX-6NFbVfECgen3JnQWYheSWAlZK0Dts0hpk4d~vlYOCsmFmPeoBwPuJZ9-koBWxk2zM~yV~E~H5AMz8ffC3F3Z5y804Cf8daAIT1Tze-z6Z3QqScmof9MWGaYsm6X-03mGH--gLOEwW9TzkTsa5hm~g1IDRfTHztcCwZ1cgrMdyyawEOmZj8K7HoYATtOPw-69SkJl9XPbQPAQiJIjpY0A0vgXfsdROJrEKsRagnpKD1ciCpHHiBXzGfoqHPeEBpDV3f-Jf-iROgJjJ1oN1TOI66bGX0Q6q0LyI1STSBaWgR9C94qlTcXxcxqrECUZOBKVw__"
+  },
+  {
+    "image":"https://s3-alpha-sig.figma.com/img/7448/4fd6/264f831309829d5a6f68168b510ab739?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=A2HOKz-AtTIFAnJit3W19LEKSaPvkK~jW4M33m02AciPF0i-uO~boQynUWcH1fRhW3zfIE64u9A9IbrPSp6ogAOFQOnf0OyCxCh0kxga4zDZKE3MLyvlyCMkYC1YfP8pBCrme2U38N13QgRUgMjlHmsnTFCAgi4XzjJToAxRCPS6EqMmTxF8z7GhQgzrlM0jJELyNobZgjWB5uK4Opco~MRKUwBmmbHEd3Mt2Ffw4Mc0dKMJjn1htl~jYRPmVfapByZGnxadfLu40P-DjpYJ9VeGXhSHyhU7n5JV-tSuA162ANhGZKK75gpf9QdCAeDS~51w71Sse857M1dVahK9Iw__"
+  },
+  {
+    "image":"https://s3-alpha-sig.figma.com/img/3d56/df70/3fa8bd914ede200585c17f74be56d390?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=oFcffiL0MHULO6LOKeDbv6vYG~shcLf9SXmWAVAetRKspBiguEnccIZB7RoOdTcEIbsxcp0stl3yJJjzhco~2RBij6q168lGauL-SoLKglvzjC9fMw7ThgM46ZlqJxcPjDLtqc2t9SzRVs2YONuthWuxIR7EYX21kbTIL5AljAwDeXNejLRXkhDYR5~P4tJAs9Lc10i4kzr26hsJKywltl54pmvubFeMhfdhqb6YSJ31Oux4INhR5CzTZ0c5Rg4qPL5oyeUMexlVS6lnHe-tBVL1gF2IaxeYmoasCAejV-ObqPqaUy783Xng7pdp7krMMVTrj6mYUlcvhaJ3WowpAw__"
+  },
+  {
+    "image":"https://s3-alpha-sig.figma.com/img/46f5/00cb/cbbcb73d2ab04347613bede51f433313?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=nGEeqHJJ6NMx3-RfmJHUEafz5Yq1~ikii8p~H5vWGcPoQovUbtMUyrpp0w5BL4BypNKnMcbfpyL52sWPnoObbI6T7PTuyVk14LBN0u93CNiw5wV34J9EKwOZNe7wC4vtP6llSZOwdOAH3RxhBqzeP6pGy~snODhO3U2KV79LFTmSW9igFJbxl6W3Sfb1ajf8FPd7wuLiJHXCYMuttchz99bIi8VWDqFen2KfnP0LVvm8G93tk~CGvP43TowHKiEWj61hte2cQoDoH8K6lA6cVhb3KedX2fo9EJdXUZcLl6I0wkT4D~JToxcvMUGhrctah4TxW0-6UyMrwhTRBWTDJw__"
+  },
+  {
+    "image":"https://s3-alpha-sig.figma.com/img/c9ee/4482/12e5af57db4d64865894e9c04c92f335?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=g6~sdczSEF5xzziZBKun9jKbxhJIDz2-pcx8v9UuRFRPrl5Fa-3DOYm6H~YGyNcu32NORW-BK9420MFAtHhXThAh5XXk8VMSzzVCN593xuf4ACgpyROHEgnLkehWdjVMQCaIpimNAkzV4aAFZoOQfn16Ut4yXzcLwBxHbD0~IEByl6SL9Hugjj0PbfvXorVHrevwnkKeE0cCh2D71CpEyD5OBATGfeyATzmjZCsQ8KypIuM10kkqYVkVDkkEcpvMfo49ZWBAs-Nu8epV3C0uVnXgnT8eTvjJi1upufg1GE1SF7JSjfwmGFzOhY-8JKpmPx0QL1ZiA1MG8HhOFyVV2A__"
+  }
+
+
+],
+"Projects":[
+  {
+    "id":101,
+    "image":"https://s3-alpha-sig.figma.com/img/177e/1814/b10de511a6d794394ff4cc1e5fcea43e?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=dP6F~Py-Eolkl~FQ56xuH08ZNGgJARyp5VYBYzSI2Xlqhntw6r4FX3cKIuJkq8lTWHIBJG1zOKTUCeYN85qL3P4Bza4n45EtnK5eP4rd~lDzMKtNfqwAJyHRwZYrGkr6Btr4py9lm6QWCwLx2uKmvJehmq8mTVdkvlGRr1AXXKtWhOhGGyvCAYANn4ey2r2fz4ij7oKTzOtoobyLnO6wmeNtci3FbSoJ5KTncH-8B02YP5eHzTjpjGcJOf0YrRr3JBNURAiS1xHmeICPP8oQ2gQ74y0aCmT~dYa7K9uOXFk8vs2jYMJbimKrkD1bIdP3ch64m7gAlSJt6jSlm3gdeQ__",
+    "name":"Red Sea"
+  
+  },
+  {
+    "id":102,
+    "image":"https://s3-alpha-sig.figma.com/img/0f63/0a5d/cbb4c864f15ed1c1018b6f276523fd9b?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=S~n1k70xxpgvfdd~DjRsVlQ5TyOVzBnLGFcafbptuCT6JeeQLuIt~iMVzrzSL4uHJ0u5OWtME8qGeTh2Vot6mJBjQTgv0c0K9ZxVeGiTfd4HCqb9Ky4WM79Qwk94uXKHQV-BAIGrBdZP4HA5iHCWtgzBu60ot4FPSCCt0aL7dNrRRZjFyqhq-XowyXAsxANJwmvi-MbUqvWpERc4lxGFMigj3liEhZrDYBOsrEmCubU~UQG0gnVMjvmwAdKsg0SEFUe9aqi8abhAX4SnQUSCtyVZrZEyx1LzlRwJUGtKE8Mwms9qP-Cr2JO56UbXZxuV-EjUO6FPb1H9aeq329fXNQ__",
+    "name":"King Abdulaziz Airport"
+  },
+   {
+    "id":103,
+    "image":"https://s3-alpha-sig.figma.com/img/0f63/0a5d/cbb4c864f15ed1c1018b6f276523fd9b?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=S~n1k70xxpgvfdd~DjRsVlQ5TyOVzBnLGFcafbptuCT6JeeQLuIt~iMVzrzSL4uHJ0u5OWtME8qGeTh2Vot6mJBjQTgv0c0K9ZxVeGiTfd4HCqb9Ky4WM79Qwk94uXKHQV-BAIGrBdZP4HA5iHCWtgzBu60ot4FPSCCt0aL7dNrRRZjFyqhq-XowyXAsxANJwmvi-MbUqvWpERc4lxGFMigj3liEhZrDYBOsrEmCubU~UQG0gnVMjvmwAdKsg0SEFUe9aqi8abhAX4SnQUSCtyVZrZEyx1LzlRwJUGtKE8Mwms9qP-Cr2JO56UbXZxuV-EjUO6FPb1H9aeq329fXNQ__",
+    "name":"King Abdulaziz Airport"
+  },
+   {
+    "id":104,
+    "image":"https://s3-alpha-sig.figma.com/img/0f63/0a5d/cbb4c864f15ed1c1018b6f276523fd9b?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=S~n1k70xxpgvfdd~DjRsVlQ5TyOVzBnLGFcafbptuCT6JeeQLuIt~iMVzrzSL4uHJ0u5OWtME8qGeTh2Vot6mJBjQTgv0c0K9ZxVeGiTfd4HCqb9Ky4WM79Qwk94uXKHQV-BAIGrBdZP4HA5iHCWtgzBu60ot4FPSCCt0aL7dNrRRZjFyqhq-XowyXAsxANJwmvi-MbUqvWpERc4lxGFMigj3liEhZrDYBOsrEmCubU~UQG0gnVMjvmwAdKsg0SEFUe9aqi8abhAX4SnQUSCtyVZrZEyx1LzlRwJUGtKE8Mwms9qP-Cr2JO56UbXZxuV-EjUO6FPb1H9aeq329fXNQ__",
+    "name":"King Abdulaziz Airport"
+  },
+   {
+    "id":105,
+    "image":"https://s3-alpha-sig.figma.com/img/0f63/0a5d/cbb4c864f15ed1c1018b6f276523fd9b?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=S~n1k70xxpgvfdd~DjRsVlQ5TyOVzBnLGFcafbptuCT6JeeQLuIt~iMVzrzSL4uHJ0u5OWtME8qGeTh2Vot6mJBjQTgv0c0K9ZxVeGiTfd4HCqb9Ky4WM79Qwk94uXKHQV-BAIGrBdZP4HA5iHCWtgzBu60ot4FPSCCt0aL7dNrRRZjFyqhq-XowyXAsxANJwmvi-MbUqvWpERc4lxGFMigj3liEhZrDYBOsrEmCubU~UQG0gnVMjvmwAdKsg0SEFUe9aqi8abhAX4SnQUSCtyVZrZEyx1LzlRwJUGtKE8Mwms9qP-Cr2JO56UbXZxuV-EjUO6FPb1H9aeq329fXNQ__",
+    "name":"King Abdulaziz Airport"
+  }
+],
+"OurVisionAndMission":
+  {
+     "vision": [
+    {
+      "id": 1,
+      "title": "Global Leadership",
+      "description": "To emerge as a global pioneer in delivering innovative and tailored solutions that meet diverse industry needs."
+    },
+    {
+      "id": 2,
+      "title": "Inspiring Trust",
+      "description": "To build lasting confidence and drive success for our clients and partners through exceptional service and reliability."
+    },
+    {
+      "id": 3,
+      "title": "Market Adaptability",
+      "description": "To proactively adapt to ever-changing market dynamics, ensuring we consistently exceed expectations."
+    },
+    {
+      "id": 4,
+      "title": "Innovation Excellence",
+      "description": "To set new industry benchmarks by integrating cutting-edge technologies and forward-thinking strategies."
+    },
+    {
+      "id": 5,
+      "title": "Operational Excellence",
+      "description": "To uphold excellence as a cornerstone of our values, delivering unmatched quality and value at every stage."
+    }
+  ]
+  ,
+     "mission": [
+    {
+      "id": 1,
+      "title": "Market Leadership",
+      "description": "To lead the market with fully integrated solutions that set new standards for quality and innovation."
+    },
+    {
+      "id": 2,
+      "title": "Client Empowerment",
+      "description": "To empower clients by understanding their unique needs and delivering strategic, results-driven solutions."
+    },
+    {
+      "id": 3,
+      "title": "Exceptional Service",
+      "description": "To provide outstanding service that ensures client satisfaction and drives mutual success."
+    },
+    {
+      "id": 4,
+      "title": "Continuous Improvement",
+      "description": "To embrace a culture of continuous learning and innovation, staying ahead of industry trends."
+    },
+    {
+      "id": 5,
+      "title": "Sustainable Growth",
+      "description": "To foster industry-leading growth through responsible business practices and value-driven solutions."
+    }
+  ]
+  }
+
+
+  
+}
