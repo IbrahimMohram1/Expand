@@ -4,6 +4,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import { FiPhone } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
+import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <>
@@ -30,10 +31,20 @@ export default function Footer() {
               </div>
               <div className="md:w-1/3 w-full ">
                 <ul className="flex justify-around md:flex-row flex-col md:gap-x-5 gap-y-2 text-nowrap">
-                  <li>Home</li>
-                  <li>About Us</li>
-                  <li>Services</li>
-                  <li>Projects</li>
+                  <Link to={"/"}>
+                    <li>Home</li>
+                  </Link>
+                  <Link to={"/about"}>
+                    <li>About Us</li>
+                  </Link>
+                  <Link to={`/services/:1`}>
+                    {" "}
+                    <li>Services</li>
+                  </Link>
+                  <Link to={"/Projects"}>
+                    {" "}
+                    <li>Projects</li>
+                  </Link>
                 </ul>
               </div>
             </div>

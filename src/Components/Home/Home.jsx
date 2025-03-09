@@ -63,9 +63,11 @@ export default function Home() {
                 expectations and build long-term partnerships.{" "}
               </p>
               <div className="flex justify-end">
-                <a href="#" className="mainColor font-bold mt-3 inline-block">
-                  Discover more →
-                </a>
+                <Link to={"/about"}>
+                  <a className="mainColor font-bold mt-3 inline-block">
+                    Discover more →
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
