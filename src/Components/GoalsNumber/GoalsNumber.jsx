@@ -31,9 +31,12 @@ export default function GoalsNumber() {
             CounterData.map((item, index) => {
               const IconComponent = icons[item.icon] || tbIcons[item.icon]; // تحويل اسم الأيقونة إلى مكون
               return (
-                <div key={index} className="text-center p-4 text-2xl">
+                <div
+                  key={index}
+                  className="text-center p-4 text-2xl flex justify-center items-center flex-col"
+                >
                   {IconComponent && (
-                    <IconComponent className=" ml-10 md:ml-16 text-center flex justify-center" />
+                    <IconComponent className="  text-center flex justify-center" />
                   )}
                   <p className="text-xl md:text-2xl font-bold">{item.value}</p>
                   <p className="text-sm md:text-base">{item.label}</p>

@@ -19,15 +19,15 @@ export default function HeroSection() {
       {/* النص والأزرار */}
       <div className="relative z-10 flex-grow flex items-center">
         <div className="w-3/4 md:w-[80%] mx-auto my-5">
-          <div className="w-full md:w-1/2 flex flex-col items-start justify-start text-left gap-y-4 text-white">
-            <h1 className="text-3xl md:text-3xl lg:text-3xl font-bold leading-tight">
+          <div className="w-full md:w-1/3 flex flex-col items-start justify-start text-left gap-y-4 text-white">
+            <h1 className="text-3xl md:text-4xl  font-bold leading-tight">
               Innovative Solutions Tailored for Your Needs
             </h1>
-            <p className="text-base md:text-xl lg:text-2xl">
+            <p className="text-base md:text-2xl ">
               Expand Trading Co. – Your Trusted Partner in Electrical, Safety,
               Marine, and Logistics Solutions since 2015.
             </p>
-            <button className="bg-[#D74D1E] text-white py-2 px-6 rounded-md hover:bg-[#c6451a] transition duration-300">
+            <button className="bg-[#D74D1E] text-white py-3 px-6 rounded-md hover:bg-[#c6451a] transition duration-300">
               Discover More
             </button>
           </div>
