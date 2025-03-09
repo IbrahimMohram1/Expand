@@ -20,6 +20,7 @@ export default function SwiperProjects() {
             spaceBetween={30}
             slidesPerView={5}
             breakpoints={{
+              140: { slidesPerView: 1 },
               640: { slidesPerView: 2 },
               1024: { slidesPerView: 5 },
             }}

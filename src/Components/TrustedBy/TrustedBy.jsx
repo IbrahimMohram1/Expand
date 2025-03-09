@@ -14,12 +14,12 @@ export default function TrustedBy() {
           Trusted by
         </h2>
         <div className="w-3/4 mx-auto py-4">
-          <div className="flex justify-center items-center md:flex-row flex-col text-center">
+          <div className="flex justify-center items-center md:flex-row flex-col text-center gap-y-4 ">
             {TrustedByData.length > 0 ? (
               TrustedByData.map((client, index) => (
                 <div
                   key={index}
-                  className="md:w-1/6 w-full flex justify-center items-center gap-y-4"
+                  className="md:w-1/6 w-full flex justify-center items-center my-2 "
                 >
                   <img
                     src={client.image}
