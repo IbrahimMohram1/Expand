@@ -5,16 +5,18 @@ export default function SecSection({ image, who, p }) {
   return (
     <>
       <div className="container my-5">
-        <div className=" m-auto ">
-          <div className="flex justify-center items-start md:flex-row flex-col  gap-x-2 md:gap-y-0 gap-y-3">
-            <div className="md:w-1/2 my-1 w-full ">
-              <img src={image} className=" w-full  h-screen rounded-xl" />
+        <div className="m-auto">
+          <div className="flex justify-center items-start md:flex-row flex-col gap-x-2 md:gap-y-0 gap-y-3">
+            <div className="md:w-1/2 my-1 w-full">
+              <img
+                src={image}
+                className="w-full h-full object-cover rounded-xl"
+              />
             </div>
 
-            <div className="md:w-1/2 w-full ">
-              <h1 className="mainColor text-2xl tracking-[1px] my-3 ">{who}</h1>
-
-              <p className="text-xs leading-5 tracking-[1.5px] ">{p}</p>
+            <div className="md:w-1/2 w-full">
+              <h1 className="mainColor text-2xl tracking-[1px] my-3">{who}</h1>
+              <p className="text-xs leading-5 tracking-[1.5px]">{p}</p>
             </div>
           </div>
         </div>

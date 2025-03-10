@@ -64,9 +64,9 @@ export default function Home() {
               </p>
               <div className="flex justify-end">
                 <Link to={"/about"}>
-                  <a className="mainColor font-bold mt-3 inline-block">
+                  <p className="mainColor font-bold mt-3 inline-block">
                     Discover more →
-                  </a>
+                  </p>
                 </Link>
               </div>
             </div>
