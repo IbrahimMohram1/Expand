@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <>
-      <section className="bg-[#2C2A61] p-5 ">
+      <section className="bg-[#2C2A61] p-5  overflow-hidden">
         <div className="w-full">
           <div className="flex md:justify-around items-center md:flex-row flex-col text-white flex-wrap lg:gap-x-6 md:gap-4 gap-2  justify-start text-center mx-auto">
             <div className="md:w-1/3 w-full flex justify-center max-w-fit ">
@@ -29,7 +29,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="md:w-1/3 w-full  max-w-fit">
-              <ul className="flex justify-around md:flex-row flex-col md:gap-x-5 gap-y-2 text-nowrap">
+              <ul className="flex justify-around md:flex-row flex-col md:gap-x-5 gap-y-2 text-nowrap flex-wrap">
                 <Link to={"/"}>
                   <li>Home</li>
                 </Link>
