@@ -11,10 +11,10 @@ export default function Footer() {
       <section className="bg-[#2C2A61] p-5 ">
         <div className="w-full">
           <div className="flex md:justify-around items-center md:flex-row flex-col text-white flex-wrap lg:gap-x-6 md:gap-4 gap-2  justify-start text-center mx-auto">
-            <div className="md:w-1/3 w-full flex justify-center ">
+            <div className="md:w-1/3 w-full flex justify-center max-w-fit ">
               <img src={image} className="h-16" />
             </div>
-            <div className="md:w-1/3 w-full flex justify-start items-center flex-col  ">
+            <div className="md:w-1/3 max-w-fit w-full flex justify-start items-center flex-col  ">
               <div className="flex md:justify-start items-center my-2 gap-x-3 justify-center ">
                 <div className="w-6 h-6 rounded-full bg-white text-black text-xs flex justify-center items-center">
                   <FiPhone />
@@ -28,7 +28,7 @@ export default function Footer() {
                 <p>info@expand.com</p>
               </div>
             </div>
-            <div className="md:w-1/3 w-full ">
+            <div className="md:w-1/3 w-full  max-w-fit">
               <ul className="flex justify-around md:flex-row flex-col md:gap-x-5 gap-y-2 text-nowrap">
                 <Link to={"/"}>
                   <li>Home</li>
