@@ -18,7 +18,7 @@ export default function HeroSection() {
       {/* النص والأزرار */}
       <div className="w-3/4 mx-auto">
         <div className="relative z-10 flex items-start justify-start h-full">
-          <div className="w-full md:w-1/4 lg:w-1/4 text-left text-white">
+          <div className="w-full md:w-1/2 lg:w-1/2 text-left text-white">
             <h1 className="text-xl md:text-2xl lg:text-4xl font-bold leading-tight mb-4">
               Innovative Solutions Tailored for Your Needs
             </h1>
