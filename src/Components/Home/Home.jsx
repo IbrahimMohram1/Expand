@@ -28,49 +28,53 @@ export default function Home() {
     <>
       <HeroSlider />
       <div className="container">
-        <div className=" text-white p-10 flex flex-col md:flex-row items-center max-w-6xl mx-auto gap-6">
-          {/* Images Section */}
-          <div className="flex items-center justify-center ">
-            <img
-              src={image2}
-              alt="Shipping"
-              className="w-40 h-40 md:w-56 md:h-56 rounded-lg shadow-lg"
-            />
-            <img
-              src={image}
-              alt="Power Lines"
-              className="w-52 h-52 md:w-64 md:h-64 rounded-lg shadow-lg"
-            />
+        <div className=" text-white p-10 flex flex-col md:flex-row items-center mx-auto gap-6">
+          <div className="md:w-1/2 w-full">
+            <div className="flex items-center justify-center ">
+              <img
+                src={image2}
+                alt="Shipping"
+                className="w-40 h-40 md:w-56 md:h-56 rounded-lg shadow-lg"
+              />
+              <img
+                src={image}
+                alt="Power Lines"
+                className="w-52 h-52 md:w-64 md:h-64 rounded-lg shadow-lg"
+              />
+            </div>
           </div>
-
-          {/* Who We Are */}
-          <div
-            style={{
-              backgroundImage: `url(${bgImage})`,
-              backgroundSize: "5px 10px",
-              backgroundRepeat: "repeat",
-            }}
-            className="rounded-lg"
-          >
-            <div className="  max-w-md p-5 ">
-              {/* المحتوى */}
-              <h2 className="text-2xl font-bold mainColor">Who We Are</h2>
-              <p className="mt-2 text-black text-sm">
-                We are Expand Trading Co., a Jeddah-based leader since 2015,
-                providing innovative, high-quality solutions across electrical,
-                safety, energy, and industrial sectors. With a client-first
-                approach, we deliver tailored products and services that exceed
-                expectations and build long-term partnerships.{" "}
-              </p>
-              <div className="flex justify-end">
-                <Link to={"/about"}>
-                  <p className="mainColor font-bold mt-3 inline-block">
-                    Discover more →
-                  </p>
-                </Link>
+          {/* Images Section */}
+          <div className="md:w-1/2 w-full">
+            <div
+              style={{
+                backgroundImage: `url(${bgImage})`,
+                backgroundSize: "5px 10px",
+                backgroundRepeat: "repeat",
+              }}
+              className="rounded-lg"
+            >
+              <div className="  max-w-md p-5 ">
+                {/* المحتوى */}
+                <h2 className="text-2xl font-bold mainColor">Who We Are</h2>
+                <p className="mt-2 text-black text-sm">
+                  We are Expand Trading Co., a Jeddah-based leader since 2015,
+                  providing innovative, high-quality solutions across
+                  electrical, safety, energy, and industrial sectors. With a
+                  client-first approach, we deliver tailored products and
+                  services that exceed expectations and build long-term
+                  partnerships.{" "}
+                </p>
+                <div className="flex justify-end">
+                  <Link to={"/about"}>
+                    <p className="mainColor font-bold mt-3 inline-block">
+                      Discover more →
+                    </p>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
+          {/* Who We Are */}
         </div>
       </div>
 
