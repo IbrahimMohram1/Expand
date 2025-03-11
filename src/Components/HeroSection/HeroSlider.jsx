@@ -9,7 +9,7 @@ export default function HeroSection() {
   return (
     <section className="w-full min-h-screen flex flex-col justify-end p-5">
       {/* الصورة كخلفية */}
-      <div className="w-full h-full absolute inset-0 z-0">
+      <div className="w-full h-full absolute inset-0 z-0 brightness-[0.25]">
         <img
           src={HeroImage} // غير المسار ده لصورة حقيقية
           alt="Hero Background"
