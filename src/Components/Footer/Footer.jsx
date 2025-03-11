@@ -9,44 +9,42 @@ export default function Footer() {
   return (
     <>
       <section className="bg-[#2C2A61] p-5 ">
-        <div className="container">
-          <div className=" m-auto">
-            <div className="flex md:justify-around items-center md:flex-row flex-col text-white flex-wrap md:gap-x-10  justify-start text-center mx-auto">
-              <div className="md:w-1/3 w-full flex justify-center ">
-                <img src={image} className="h-16" />
-              </div>
-              <div className="md:w-1/3 w-full flex justify-start items-center flex-col  ">
-                <div className="flex md:justify-start items-center my-2 gap-x-3 justify-center ">
-                  <div className="w-6 h-6 rounded-full bg-white text-black text-xs flex justify-center items-center">
-                    <FiPhone />
-                  </div>
-                  <p>+996 12 692 4440</p>
+        <div className="w-full">
+          <div className="flex md:justify-around items-center md:flex-row flex-col text-white flex-wrap lg:gap-x-6 md:gap-4 gap-2  justify-start text-center mx-auto">
+            <div className="md:w-1/3 w-full flex justify-center ">
+              <img src={image} className="h-16" />
+            </div>
+            <div className="md:w-1/3 w-full flex justify-start items-center flex-col  ">
+              <div className="flex md:justify-start items-center my-2 gap-x-3 justify-center ">
+                <div className="w-6 h-6 rounded-full bg-white text-black text-xs flex justify-center items-center">
+                  <FiPhone />
                 </div>
-                <div className="flex md:justify-start items-center my-2 gap-x-3 justify-center">
-                  <div className="w-6 h-6 rounded-full bg-white text-black text-xs flex justify-center items-center">
-                    <HiOutlineMail />
-                  </div>{" "}
-                  <p>info@expand.com</p>
-                </div>
+                <p>+996 12 692 4440</p>
               </div>
-              <div className="md:w-1/3 w-full ">
-                <ul className="flex justify-around md:flex-row flex-col md:gap-x-5 gap-y-2 text-nowrap">
-                  <Link to={"/"}>
-                    <li>Home</li>
-                  </Link>
-                  <Link to={"/about"}>
-                    <li>About Us</li>
-                  </Link>
-                  <Link to={`/services/1`}>
-                    {" "}
-                    <li>Services</li>
-                  </Link>
-                  <Link to={"/Projects"}>
-                    {" "}
-                    <li>Projects</li>
-                  </Link>
-                </ul>
+              <div className="flex md:justify-start items-center my-2 gap-x-3 justify-center">
+                <div className="w-6 h-6 rounded-full bg-white text-black text-xs flex justify-center items-center">
+                  <HiOutlineMail />
+                </div>{" "}
+                <p>info@expand.com</p>
               </div>
+            </div>
+            <div className="md:w-1/3 w-full ">
+              <ul className="flex justify-around md:flex-row flex-col md:gap-x-5 gap-y-2 text-nowrap">
+                <Link to={"/"}>
+                  <li>Home</li>
+                </Link>
+                <Link to={"/about"}>
+                  <li>About Us</li>
+                </Link>
+                <Link to={`/services/1`}>
+                  {" "}
+                  <li>Services</li>
+                </Link>
+                <Link to={"/Projects"}>
+                  {" "}
+                  <li>Projects</li>
+                </Link>
+              </ul>
             </div>
           </div>
         </div>
