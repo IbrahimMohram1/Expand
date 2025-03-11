@@ -53,7 +53,7 @@ export default function Home() {
               }}
               className="rounded-lg"
             >
-              <div className="  max-w-md p-5 ">
+              <div className="  w-full md:p-5 ">
                 {/* المحتوى */}
                 <h2 className="text-2xl font-bold mainColor">Who We Are</h2>
                 <p className="mt-2 text-black text-sm">
