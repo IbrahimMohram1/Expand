@@ -11,7 +11,7 @@ export default function Footer() {
       <section className="bg-[#2C2A61] p-5 ">
         <div className="container">
           <div className=" m-auto">
-            <div className="flex md:justify-around items-center md:flex-row flex-col text-white md:gap-x-10  justify-start text-center mx-auto">
+            <div className="flex md:justify-around items-center md:flex-row flex-col text-white flex-wrap md:gap-x-10  justify-start text-center mx-auto">
               <div className="md:w-1/3 w-full flex justify-center ">
                 <img src={image} className="h-16" />
               </div>

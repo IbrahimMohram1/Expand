@@ -1,5 +1,4 @@
 import React, { useContext, useEffect } from "react";
-import { ContextData } from "../Context/ContextData";
 
 export default function SecSection({ image, who, p }) {
   return (
