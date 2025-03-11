@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   return (
-    <section className="w-full min-h-screen flex flex-col justify-end p-5 relative">
+    <section className="w-full min-h-screen flex flex-col justify-center p-5 relative">
       {/* الصورة كخلفية */}
       <div className="w-full h-full absolute inset-0 z-0 brightness-[0.25]">
         <img
@@ -16,8 +16,8 @@ export default function HeroSection() {
       </div>
 
       {/* النص والأزرار */}
-      <div className="relative z-10 flex items-center justify-center h-full">
-        <div className="w-full md:w-3/4 lg:w-1/2 text-center text-white">
+      <div className="relative z-10 flex items-start justify-start h-full">
+        <div className="w-full md:w-1/4 lg:w-1/4 text-center text-white">
           <h1 className="text-xl md:text-2xl lg:text-4xl font-bold leading-tight mb-4">
             Innovative Solutions Tailored for Your Needs
           </h1>
