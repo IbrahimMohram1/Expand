@@ -39,17 +39,15 @@ export default function HeroSection() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 mt-4 p-4">
           <div className="flex items-center gap-x-2 text-white">
             <IoIosArrowUp className="rounded-full bg-[#D74D1E] p-1" />
-            <p className="text-sm md:text-base lg:text-lg">
-              Manufacture & Distribution
-            </p>
+            <p className="text-[20px]">Manufacture & Distribution</p>
           </div>
           <div className="flex items-center gap-x-2 text-white">
             <IoIosArrowUp className="rounded-full bg-[#D74D1E] p-1" />
-            <p className="text-sm md:text-base lg:text-lg">Products</p>
+            <p className="text-[20px]">Products</p>
           </div>
           <div className="flex items-center gap-x-2 text-white">
             <IoIosArrowUp className="rounded-full bg-[#D74D1E] p-1" />
-            <p className="text-sm md:text-base lg:text-lg">Install</p>
+            <p className="text-[20px]">Install</p>
           </div>
         </div>
       </div>
