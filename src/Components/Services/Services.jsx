@@ -14,7 +14,7 @@ export default function Services() {
     <>
       <div className="container my-5">
         <div className="">
-          <div className="flex justify-between items-end ">
+          <div className="flex justify-between items-end my-4 ">
             <div>
               <h2 className="mainColor">Our Services</h2>
             </div>

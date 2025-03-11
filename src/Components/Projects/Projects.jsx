@@ -11,7 +11,7 @@ export default function Projects() {
     <>
       <div className="container my-7 ">
         <div className="  mx-auto">
-          <div className="flex justify-between items-end">
+          <div className="flex justify-between items-end my-4">
             <div>
               <h2 className="mainColor">Our Projects</h2>
             </div>
