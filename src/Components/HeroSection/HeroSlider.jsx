@@ -21,7 +21,7 @@ export default function HeroSection() {
       <div className="relative z-10  flex items-end justify-between">
         <div className="w-3/4  mx-auto my-5">
           <div className="w-full md:w-1/2 flex flex-col items-start justify-start text-left gap-y-4 text-white">
-            <h1 className="text-3xl md:text-4xl  font-bold leading-tight !important">
+            <h1 className="text-xl md:text-2xl lg:text-4xl  font-bold leading-tight">
               Innovative Solutions Tailored for Your Needs
             </h1>
             <p className="text-base md:text-2xl ">
