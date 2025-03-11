@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import "./App.css";
+import "./Font.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import Layout from "./Components/Layout/Layout";

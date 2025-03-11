@@ -32,3 +32,8 @@ writing-mode: sideways-lr;
 html{
     font-size: 21px;
 }
+
+body {
+    font-family: 'MyCustomFont', sans-serif;
+    /* هنا بنطبق الفونت */
+}
