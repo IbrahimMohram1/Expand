@@ -5,7 +5,7 @@ export default function MainSection({ image, text }) {
     <>
       <section className="w-full min-h-screen flex flex-col justify-center">
         {/* الصورة كخلفية */}
-        <div className="w-full h-full absolute inset-0 z-0">
+        <div className="w-full h-full absolute inset-0 z-0 brightness-[0.25]">
           <img
             src={image} // غير المسار ده لصورة حقيقية
             alt="Hero Background"

@@ -38,7 +38,7 @@ export default function Service() {
       </div>
       <SwiperServices />
       <div className="container my-5">
-        <div className="md:w-[75%] w-full mx-auto">
+        <div className=" w-full mx-auto">
           <div className="flex justify-center items-stretch md:flex-row flex-col gap-4">
             <div className="md:w-1/2 w-full">
               <img
