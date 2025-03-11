@@ -13,7 +13,7 @@ export default function Services() {
   return (
     <>
       <div className="container my-5">
-        <div className="w-4/5 mx-auto">
+        <div className="">
           <div className="flex justify-between items-center">
             <div>
               <h2 className="mainColor">Our Services</h2>
