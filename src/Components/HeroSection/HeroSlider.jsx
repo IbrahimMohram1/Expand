@@ -19,8 +19,8 @@ export default function HeroSection() {
 
       {/* النص والأزرار */}
       <div className="relative z-10  flex items-end justify-between">
-        <div className="w-3/4 md:w-[80%] mx-auto my-5">
-          <div className="w-full md:w-1/3 flex flex-col items-start justify-start text-left gap-y-4 text-white">
+        <div className="w-3/4  mx-auto my-5">
+          <div className="w-full md:w-1/2 flex flex-col items-start justify-start text-left gap-y-4 text-white">
             <h1 className="text-3xl md:text-4xl  font-bold leading-tight !important">
               Innovative Solutions Tailored for Your Needs
             </h1>
