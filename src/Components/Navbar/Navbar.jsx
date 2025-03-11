@@ -17,10 +17,10 @@ export default function Navbar() {
     }
   };
   return (
-    <nav className="bg-transparent w-3/4 m-auto absolute top-0 z-20 left-0 right-0">
+    <nav className="bg-transparent w-5/6 m-auto absolute top-0 z-20 left-0 right-0">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src={navLogo} className="h-9" alt="Logo" />
+          <img src={navLogo} className="h-11" alt="Logo" />
         </a>
         <button
           onClick={toggleNavbar}
