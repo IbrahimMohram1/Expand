@@ -36,9 +36,9 @@ export default function HeroSection() {
       </div>
 
       {/* الـ HR والعناصر التحتية */}
-      <div className="absolute bottom-5 left-0 right-0 z-10 w-full md:w-[90%] mx-auto">
+      <div className="absolute md:bottom-5 bottom-9 left-0 right-0 z-10 w-full md:w-[90%] mx-auto">
         <hr className="h-[.75px] bg-slate-200" />
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4 mt-4 p-4">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 mt-2 ">
           <div className="flex items-center gap-x-2 text-white">
             <IoIosArrowUp className="rounded-full bg-[#D74D1E] p-1" />
             <p className="text-[20px]">Manufacture & Distribution</p>
