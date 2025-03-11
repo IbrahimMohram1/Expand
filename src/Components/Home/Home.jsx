@@ -28,7 +28,7 @@ export default function Home() {
     <>
       <HeroSlider />
       <div className="container">
-        <div className=" text-white p-10 flex flex-col md:flex-row items-center mx-auto gap-6">
+        <div className=" text-white  md:p-10 flex flex-col md:flex-row items-center mx-auto gap-6">
           <div className="md:w-1/2 w-full">
             <div className="flex items-center justify-center ">
               <img
@@ -53,7 +53,7 @@ export default function Home() {
               }}
               className="rounded-lg"
             >
-              <div className="  w-full md:p-5 ">
+              <div className="  w-full p-5 ">
                 {/* المحتوى */}
                 <h2 className="text-2xl font-bold mainColor">Who We Are</h2>
                 <p className="mt-2 text-black text-sm">
