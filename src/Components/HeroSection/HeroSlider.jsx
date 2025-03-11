@@ -24,7 +24,7 @@ export default function HeroSection() {
             <h1 className="text-xl md:text-2xl lg:text-4xl  font-bold leading-tight">
               Innovative Solutions Tailored for Your Needs
             </h1>
-            <p className="text-base md:text-2xl ">
+            <p className="text-base md:text-xl lg:text-2xl ">
               Expand Trading Co. – Your Trusted Partner in Electrical, Safety,
               Marine, and Logistics Solutions since 2015.
             </p>
