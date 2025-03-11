@@ -8,7 +8,7 @@ export default function Services() {
   let { GetServices, Services } = useContext(ContextData);
   useEffect(() => {
     GetServices();
-  }, [Services]);
+  }, []);
 
   return (
     <>

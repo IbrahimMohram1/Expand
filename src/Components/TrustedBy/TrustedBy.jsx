@@ -5,7 +5,7 @@ export default function TrustedBy() {
   let { TrustedBy, TrustedByData } = useContext(ContextData);
   useEffect(() => {
     TrustedBy();
-  }, [TrustedByData]);
+  }, []);
 
   return (
     <>

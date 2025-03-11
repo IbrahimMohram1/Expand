@@ -11,7 +11,7 @@ export default function AboutUs() {
   let { MissionAndVision, Mission } = useContext(ContextData);
   useEffect(() => {
     MissionAndVision();
-  }, [Mission]);
+  }, []);
   return (
     <>
       <MainSection image={MainImage} text="About Us" />

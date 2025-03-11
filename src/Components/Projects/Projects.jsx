@@ -6,7 +6,7 @@ export default function Projects() {
   let { GetPrjocts, Projects } = useContext(ContextData);
   useEffect(() => {
     GetPrjocts();
-  }, [Projects]);
+  }, []);
   return (
     <>
       <div className="container my-7 ">
