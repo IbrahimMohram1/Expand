@@ -18,7 +18,7 @@ export default function HeroSection() {
       </div>
 
       {/* النص والأزرار */}
-      <div className="relative z-10 flex-grow flex items-center justify-between">
+      <div className="relative z-10  flex items-end justify-between">
         <div className="w-3/4 md:w-[80%] mx-auto my-5">
           <div className="w-full md:w-1/3 flex flex-col items-start justify-start text-left gap-y-4 text-white">
             <h1 className="text-3xl md:text-4xl  font-bold leading-tight !important">
@@ -38,7 +38,7 @@ export default function HeroSection() {
       </div>
 
       {/* الـ HR والعناصر التحتية */}
-      <div className="relative  z-10 w-[90%]  md:w-[80%] mx-auto pb-8 md:bottom-10 bottom-12 ">
+      <div className="relative  z-10 w-[90%]  md:w-[80%] mx-auto pb-8 md:bottom-2 bottom-3 ">
         <hr className="h-[.75px] bg-slate-200" />
         <div className="flex  md:flex-row justify-between items-center gap-4 mt-4">
           <div className="flex items-center gap-x-2 text-white">
