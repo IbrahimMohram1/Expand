@@ -4,7 +4,9 @@ export default {
     "./src/**/*.{html,js,jsx,ts,tsx}",],
   theme: {
     extend: {
-      
+       fontSize: {
+        'base': '16px', // هنا بتحدد حجم الخط الأساسي
+      },
        container: {
       // you can configure the container to be centered
       center: true,
@@ -22,6 +24,9 @@ export default {
     },
     },
   },
+   safelist: [
+    'text-sm', 'text-md', 'text-lg', // هنا بتحط الكلاسات اللي مش فاكرها PurgeCSS
+  ],
   plugins: [],
 }
 
