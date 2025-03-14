@@ -29,7 +29,7 @@ export default function SwiperServices() {
       }
     };
     fetchServices();
-  }, [GetServices]);
+  }, []);
 
   useEffect(() => {
     if (Services.length > 0 && id) {
@@ -43,7 +43,7 @@ export default function SwiperServices() {
         }
       }
     }
-  }, [id, Services]);
+  }, [id]);
 
   const settings = {
     infinite: true,
