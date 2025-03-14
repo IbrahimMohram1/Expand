@@ -36,7 +36,6 @@ export default function SwiperServices() {
     slidesToShow: 5,
     slidesToScroll: 1,
     centerMode: true,
-    className: "center",
     centerPadding: "100px",
     responsive: [
       { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 1 } },
@@ -108,7 +107,7 @@ export default function SwiperServices() {
                           </p>
                           <Link
                             to={`/services/${service.id}`}
-                            className="mt-3 bg-white  text-black px-4 py-1 rounded-lg transition duration-300"
+                            className="mt-3 bg-white  text-black px-4 py-1 rounded-lg transition duration-300 text-sm text-nowrap"
                           >
                             View Details
                           </Link>
