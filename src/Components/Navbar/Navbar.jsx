@@ -60,13 +60,21 @@ export default function Navbar() {
               <ul className="font-normal flex flex-col p-4 md:gap-y-0 gap-y-2 md:p-0 md:flex-row md:space-x-6 rtl:space-x-reverse text-sm justify-end text-white mb-1">
                 <li>
                   <p className="flex gap-x-2 items-center">
-                    <FaPhoneAlt /> 01020181248
+                    <FaPhoneAlt />
+                    <a href="tel:01020181248" className="cursor-pointer">
+                      01020181248
+                    </a>
                   </p>
                 </li>
                 <li>
                   <p className="flex gap-x-2 items-center">
                     <FaEnvelope />
-                    ibrahimmohram7@gmail.com
+                    <a
+                      href="mailto:ibrahimmohram7@gmail.com"
+                      className="cursor-pointer"
+                    >
+                      ibrahimmohram7@gmail.com
+                    </a>
                   </p>
                 </li>
                 <div className="flex md:p-0 p-4 gap-x-5 md:gap-x-4 items-center">
