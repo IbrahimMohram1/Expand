@@ -115,7 +115,7 @@ export default function SwiperServices() {
   }
 
   return (
-    <div className="w-[90%] mx-auto my-5 ">
+    <div className="container mx-auto my-5 ">
       <div className="flex justify-center items-center gap-x-10">
         <Slider ref={sliderRef} {...settings}>
           {Services.length > 0 ? (
