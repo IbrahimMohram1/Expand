@@ -84,59 +84,58 @@ export default function SwiperServices() {
 
               return (
                 <div key={service.id} className="relative">
-                  <Link to={`/services/${service.id}`}>
+                  <div
+                    className={`MainBg text-white p-4 rounded-lg w-full flex flex-col justify-start items-center h-72 shadow-lg  transition-all duration-300 ${
+                      isActive ? "scale-100" : "" // تكبير الـ active service
+                    }`}
+                    style={{
+                      backgroundImage: isActive
+                        ? `url(${service.image})`
+                        : "none",
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      borderRadius: isActive ? "0.3rem" : "",
+                    }}
+                  >
+                    <div className="mt-3">
+                      {IconComponent && <IconComponent className="text-2xl" />}
+                    </div>
+                    <div className="mt-5">
+                      <p className="mt-4 text-lg font-semibold V-Text">
+                        {service.title}
+                      </p>
+                    </div>
+
+                    {/* Overlay يظهر عند الهوفر */}
                     <div
-                      className={`MainBg text-white p-4 rounded-lg w-full flex flex-col justify-start items-center h-72 shadow-lg  transition-all duration-300 ${
-                        isActive ? "scale-100" : "" // تكبير الـ active service
-                      }`}
+                      className="absolute inset-0 bg-black/70 rounded-lg flex flex-col justify-center w-full h-full items-center opacity-0 hover:opacity-100 transition-opacity duration-700 text-white text-center"
                       style={{
-                        backgroundImage: isActive
-                          ? `url(${service.image})`
-                          : "none",
+                        backgroundImage: `url(${service.image})`,
                         backgroundSize: "cover",
                         backgroundPosition: "center",
-                        borderRadius: isActive ? "0.3rem" : "",
                       }}
                     >
-                      <div className="mt-3">
-                        {IconComponent && (
-                          <IconComponent className="text-2xl" />
-                        )}
-                      </div>
-                      <div className="mt-5">
-                        <p className="mt-4 text-lg font-semibold V-Text">
-                          {service.title}
-                        </p>
-                      </div>
-
-                      {/* Overlay يظهر عند الهوفر */}
-                      <div
-                        className="absolute inset-0 bg-black/70 rounded-lg flex flex-col justify-center w-full h-full items-center opacity-0 hover:opacity-100 transition-opacity duration-700 text-white text-center"
-                        style={{
-                          backgroundImage: `url(${service.image})`,
-                          backgroundSize: "cover",
-                          backgroundPosition: "center",
-                        }}
-                      >
-                        <div className="flex justify-around flex-col items-center w-full h-full p-2">
+                      <div className="flex justify-around flex-col items-center w-full h-full p-2">
+                        <div>
                           <p className="text-xs">
                             {service.description
                               .split(" ")
                               .slice(0, 10)
                               .join(" ")}
                           </p>
-                          <div>
-                            <Link
-                              to={`/services/${service.id}`}
-                              className="mt-3 bg-white text-black px-4 py-1 rounded-lg text-sm text-nowrap"
-                            >
-                              View Details
-                            </Link>
-                          </div>
+                        </div>
+                        <div>
+                          <Link
+                            to={`/services/${service.id}`}
+                            className="mt-3 bg-white text-black px-4 py-1 rounded-lg text-sm text-nowrap"
+                            onClick={(e) => e.stopPropagation()} // منع الانتقال للـ parent
+                          >
+                            View Details
+                          </Link>
                         </div>
                       </div>
                     </div>
-                  </Link>
+                  </div>
                 </div>
               );
             })
