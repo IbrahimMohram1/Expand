@@ -50,7 +50,7 @@ export default function SwiperServices() {
 
   return (
     <div className="container mx-auto my-5 overflow-hidden">
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center gap-x-4">
         <Slider {...settings}>
           {Services.length > 0 ? (
             Services.map((service) => {
@@ -69,7 +69,9 @@ export default function SwiperServices() {
                 <div key={service.id} className="relative">
                   <Link to={`/services/${service.id}`}>
                     <div
-                      className={`MainBg text-white p-4 rounded-lg flex flex-col justify-start items-center h-72 shadow-lg mx-2 transition-all duration-300                       }`}
+                      className={`MainBg text-white p-4 rounded-lg w-full  flex flex-col  justify-start items-center h-72 shadow-lg mx-2 transition-all duration-300} ${
+                        isActive ? " " : "" // إضافة margin للـ active service
+                      }`}
                       style={{
                         backgroundImage: isActive
                           ? `url(${service.image})`
@@ -91,14 +93,14 @@ export default function SwiperServices() {
 
                       {/* Overlay يظهر عند الهوفر */}
                       <div
-                        className="absolute inset-0 bg-black/70 rounded-lg flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300 p-4 text-white text-center"
+                        className="absolute inset-0 bg-black/70 rounded-lg flex flex-col mx-2 justify-center w-full h-full items-center opacity-0 hover:opacity-100 transition-opacity duration-700  text-white text-center"
                         style={{
                           backgroundImage: `url(${service.image})`,
                           backgroundSize: "cover",
                           backgroundPosition: "center",
                         }}
                       >
-                        <div className="flex justify-around flex-col items-center w-full h-full">
+                        <div className="flex justify-around flex-col items-center w-full h-full p-2">
                           <p className="text-xs">
                             {service.description
                               .split(" ")
@@ -107,7 +109,7 @@ export default function SwiperServices() {
                           </p>
                           <Link
                             to={`/services/${service.id}`}
-                            className="mt-3 bg-white  text-black px-4 py-1 rounded-lg transition duration-300 text-sm text-nowrap"
+                            className="mt-3 bg-white  text-black px-4 py-1 rounded-lg   text-sm text-nowrap"
                           >
                             View Details
                           </Link>
