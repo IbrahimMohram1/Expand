@@ -33,7 +33,7 @@ export default function SwiperServices() {
     infinite: true,
     autoplay: !id, // إيقاف الـ autoplay لو فيه id
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     centerMode: true,
     className: "center",
