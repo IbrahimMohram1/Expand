@@ -101,8 +101,8 @@ export default function SwiperServices() {
     centerMode: true,
     centerPadding: "0px",
     initialSlide: initialSlide, // تحديد الـ initialSlide
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    nextArrow: !id ? <SampleNextArrow /> : null,
+    prevArrow: !id ? <SamplePrevArrow /> : null,
     responsive: [
       { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 1 } },
       { breakpoint: 640, settings: { slidesToShow: 2, slidesToScroll: 1 } },
