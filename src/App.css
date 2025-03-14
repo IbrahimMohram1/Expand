@@ -33,7 +33,9 @@ writing-mode: sideways-lr;
 html{
     font-size: 21px;
 }
-
+.slick-slide{
+    width: 350px !important;
+}
 body {
     font-family: 'MyCustomFont', sans-serif;
     /* هنا بنطبق الفونت */
