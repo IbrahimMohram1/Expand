@@ -87,7 +87,7 @@ export default function SwiperServices() {
                   <Link to={`/services/${service.id}`}>
                     <div
                       className={`MainBg text-white p-4 rounded-lg w-full flex flex-col justify-start items-center h-72 shadow-lg  transition-all duration-300 ${
-                        isActive ? "scale-105" : "" // تكبير الـ active service
+                        isActive ? "scale-100" : "" // تكبير الـ active service
                       }`}
                       style={{
                         backgroundImage: isActive
@@ -95,6 +95,7 @@ export default function SwiperServices() {
                           : "none",
                         backgroundSize: "cover",
                         backgroundPosition: "center",
+                        borderRadius: isActive ? "0.3rem" : "",
                       }}
                     >
                       <div className="mt-3">
@@ -110,7 +111,7 @@ export default function SwiperServices() {
 
                       {/* Overlay يظهر عند الهوفر */}
                       <div
-                        className="absolute inset-0 bg-black/70 rounded-lg flex flex-col mx-2 justify-center w-full h-full items-center opacity-0 hover:opacity-100 transition-opacity duration-700 text-white text-center"
+                        className="absolute inset-0 bg-black/70 rounded-lg flex flex-col justify-center w-full h-full items-center opacity-0 hover:opacity-100 transition-opacity duration-700 text-white text-center"
                         style={{
                           backgroundImage: `url(${service.image})`,
                           backgroundSize: "cover",
