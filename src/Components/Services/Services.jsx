@@ -20,7 +20,7 @@ export default function Services() {
             </div>
             <div>
               <Link to={`/services/1`}>
-                <p className="mainColor mt-3 text-sm">Discover more →</p>
+                <p className="mainColor text-sm">Discover more →</p>
               </Link>
             </div>
           </div>

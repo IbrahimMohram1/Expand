@@ -17,7 +17,7 @@ export default function Projects() {
             </div>
             <div>
               <Link to={"/Projects"}>
-                <h2 className="mainColor mt-3 text-sm">Discover more →</h2>
+                <h2 className="mainColor  text-sm">Discover more →</h2>
               </Link>
             </div>
           </div>
