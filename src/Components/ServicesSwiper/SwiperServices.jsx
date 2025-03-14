@@ -125,12 +125,14 @@ export default function SwiperServices() {
                               .slice(0, 10)
                               .join(" ")}
                           </p>
-                          <Link
-                            to={`/services/${service.id}`}
-                            className="mt-3 bg-white text-black px-4 py-1 rounded-lg text-sm text-nowrap"
-                          >
-                            View Details
-                          </Link>
+                          <div>
+                            <Link
+                              to={`/services/${service.id}`}
+                              className="mt-3 bg-white text-black px-4 py-1 rounded-lg text-sm text-nowrap"
+                            >
+                              View Details
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
