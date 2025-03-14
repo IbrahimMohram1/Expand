@@ -10,6 +10,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link, useParams } from "react-router-dom";
 import Slider from "react-slick";
+import Rarrow from "../../assets/RightArrow.png";
+import Larrow from "../../assets/LeftArrow.png";
 
 export default function SwiperServices() {
   const { GetServices, Services } = useContext(ContextData);
@@ -44,6 +46,51 @@ export default function SwiperServices() {
       }
     }
   }, [id]);
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+        }}
+        onClick={onClick}
+      >
+        {/* تصميم الشيفرون - سهمين رمادي وسهم برتقالي */}
+        <img
+          src={Rarrow}
+          alt="Next Arrow"
+          style={{
+            width: "50px",
+            height: "20px",
+          }}
+        />
+      </div>
+    );
+  }
+
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+        }}
+        onClick={onClick}
+      >
+        {/* تصميم الشيفرون - سهمين رمادي وسهم برتقالي */}
+        <img
+          src={Larrow}
+          alt="Prev Arrow"
+          style={{
+            width: "50px",
+            height: "20px",
+          }}
+        />
+      </div>
+    );
+  }
 
   const settings = {
     infinite: true,
@@ -54,6 +101,8 @@ export default function SwiperServices() {
     centerMode: true,
     centerPadding: "0px",
     initialSlide: initialSlide, // تحديد الـ initialSlide
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 1 } },
       { breakpoint: 640, settings: { slidesToShow: 2, slidesToScroll: 1 } },
@@ -66,8 +115,8 @@ export default function SwiperServices() {
   }
 
   return (
-    <div className="container mx-auto my-5 overflow-hidden">
-      <div className="flex justify-center items-center gap-x-4">
+    <div className="w-[90%] mx-auto my-5 ">
+      <div className="flex justify-center items-center gap-x-10">
         <Slider ref={sliderRef} {...settings}>
           {Services.length > 0 ? (
             Services.map((service) => {

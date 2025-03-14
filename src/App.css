@@ -43,3 +43,10 @@ body {
 p{
     line-height: 28.8px !important;
 }
+
+.slick-prev:before{
+    content: none !important;
+}
+.slick-next:before{
+    content: none !important;
+}
