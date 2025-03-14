@@ -28,10 +28,7 @@ writing-mode: sideways-lr;
 .slick-slider{
     width: 100%;
 }
-.slick-track{
-    display: flex !important ;
-    gap: 10px !important;
-}
+
 html{
     font-size: 21px;
 }

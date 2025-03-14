@@ -14,7 +14,7 @@ export default function Service() {
   }
   useEffect(() => {
     GetServices();
-  }, [id]);
+  }, [id, service]);
   return (
     <>
       <MainSection image={MainImage} text="Services" />
