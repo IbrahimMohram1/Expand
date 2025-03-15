@@ -9,6 +9,7 @@ import DataProvider from "./Components/Context/ContextData";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import Service from "./Components/Service/ServiceDetails";
 import Projects from "./Components/ProjectsPage/Projects";
+import NotFoundPage from "./Components/NotFoundPage/NotFoundPage";
 
 let routes = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ let routes = createBrowserRouter([
       { path: "about", element: <AboutUs /> },
       { path: "Projects", element: <Projects /> },
       { path: "services/:id", element: <Service /> },
+      { path: "*", element: <NotFoundPage /> },
     ],
   },
 ]);
