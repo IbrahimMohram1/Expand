@@ -16,6 +16,7 @@ import Services from "../Services/Services";
 import Projects from "../Projects/Projects";
 import GoalsNumber from "../GoalsNumber/GoalsNumber";
 import { Link } from "react-router-dom";
+import TrustedBy from "../TrustedBy/TrustedBy";
 
 export default function Home() {
   let { expandData, GetData } = useContext(ContextData);
@@ -66,7 +67,7 @@ export default function Home() {
                 </p>
                 <div className="flex justify-end">
                   <Link to={"/about"}>
-                    <p className="mainColor font-bold mt-3 inline-block">
+                    <p className="mainColor text-sm mt-3 inline-block">
                       Discover more →
                     </p>
                   </Link>
@@ -78,15 +79,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container mt-5">
-        <div className="flex justify-center items-center md:flex-row flex-col text-center gap-4 ">
+      <div className="container  my-5">
+        <div className="flex justify-center items-center md:flex-row flex-col  gap-4  text-left">
           {expandData.length > 0 ? (
             expandData.map((section, index) => (
               <div key={index} className="md:w-1/2 w-full p-5 shadow-xl">
                 <h2 className="mainColor text-xl font-semibold">
                   {section.title}
                 </h2>
-                <p className="p-3 text-sm">{section.content}</p>
+                <p className=" text-sm">{section.content}</p>
               </div>
             ))
           ) : (
@@ -98,7 +99,7 @@ export default function Home() {
 
       <Services />
 
-      <div className="container my-9 mb-16">
+      <div className="container my-9 mb-24">
         <div className=" mx-auto">
           <div className="flex flex-col md:flex-row gap-y-12 justify-center items-center ">
             <div className="md:w-1/2 w-full">
@@ -114,7 +115,7 @@ export default function Home() {
                 <img
                   src={shunk2}
                   alt="foreground"
-                  className="absolute top-16 left-14 md:left-24 lg:left-32 md:top-24 w-56 md:w-48 lg:w-64 h-auto rounded-lg border-4  border-white shadow-lg"
+                  className="absolute top-16 left-14 md:left-36 lg:left-56 md:top-32 w-44 md:w-48 lg:w-56 h-auto rounded-lg border-4  border-white shadow-lg"
                 />
               </div>
             </div>
@@ -124,7 +125,7 @@ export default function Home() {
               <div
                 style={{
                   backgroundImage: `url(${bgImage})`,
-                  backgroundSize: "5px 10px",
+                  backgroundSize: "10px 10px",
                   backgroundRepeat: "repeat",
                 }}
                 className="rounded-lg"
@@ -145,7 +146,7 @@ export default function Home() {
                   </p>
                   <div className="flex justify-end">
                     <Link to={"/about"}>
-                      <p className="mainColor font-bold mt-3 inline-block">
+                      <p className="mainColor text-sm mt-3 inline-block">
                         Discover more →
                       </p>
                     </Link>
@@ -156,6 +157,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <TrustedBy />
       <Projects />
     </>
   );

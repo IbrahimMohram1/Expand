@@ -14,9 +14,9 @@ export default function Services() {
     <>
       <div className="container my-5">
         <div className="">
-          <div className="flex justify-between items-end my-4 ">
+          <div className="flex justify-between items-center my-2  ">
             <div>
-              <h2 className="mainColor">Our Services</h2>
+              <h2 className="mainColor text-xl font-semibold">Our Services</h2>
             </div>
             <div>
               <Link to={`/services/1`}>
@@ -24,7 +24,7 @@ export default function Services() {
               </Link>
             </div>
           </div>
-          <p className="text-xs">
+          <p className="text-sm">
             From powering homes to securing industries, we deliver tailored
             solutions across electrical, safety, airport systems, marine
             equipment, EV tools, tech innovations, storage, and workshop

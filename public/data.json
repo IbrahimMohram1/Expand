@@ -39,120 +39,156 @@
   }
 ],
 
-"Services": [
-  {
-    "id": 1,
-    "title": "Electrical Solutions",
-    "icon": "MdElectricBolt",
-    "image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",
-    "description": "Electrical systems are the foundation of modern living and industry. They enable the functionality of homes, businesses, and factories, ensuring seamless operations and convenience. Reliable electrical systems minimize downtime, improve energy efficiency, and enhance safety, protecting people and assets. Whether for lighting, powering machinery, or maintaining critical systems, well-maintained electrical infrastructure is vital for both productivity and security. Moreover, efficient electrical solutions contribute to sustainability by reducing energy wastage and optimizing power usage.",
-    "whatWeOffer": [
-      "Generator systems, LED lighting, and code corrections.",
-      "Parking lot lighting and medical office installations.",
-      "Electrical outlets, switches, and service upgrades.",
-      "Renovations and additions for electrical systems.",
-      "New construction and custom home wiring.",
-      "Interior decorative custom lighting."
+  "Services": [
+    {
+      "id": 1,
+      "title": "ELECTRICAL",
+      "icon": "MdElectricBolt",
+      "image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",
+      "description": "Electrical systems are the foundation of modern living and industry. They enable the functionality of homes, businesses, and factories, ensuring seamless operations and convenience. Reliable electrical systems minimize downtime, improve energy efficiency, and enhance safety, protecting people and assets. Whether for lighting, powering machinery, or maintaining critical systems, well-maintained electrical infrastructure is vital for both productivity and security. Moreover, efficient electrical solutions contribute to sustainability by reducing energy wastage and optimizing power usage.",
 
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Safety & Security",
-    "icon": "MdSecurity",
-    "image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",
-    "description": "Our safety and security solutions ensure the protection of your assets and personnel.",
-    "whatWeOffer": [
-      "CCTV installation",
-      "Access control systems",
-      "Fire alarm systems"
-    ]
-  },
-  {
-    "id": 3,
-    "title": "Airport System",
-    "icon": "GiCommercialAirplane",
-    "image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",
-    "description": "We specialize in advanced airport systems to enhance operational efficiency and passenger experience.",
-    "whatWeOffer": [
-      "Baggage handling systems",
-      "Passenger boarding bridges",
-      "Air traffic control systems"
-    ]
-  },
-  {
-    "id": 4,
-    "title": "Marine Equipment",
-    "icon": "FaShip",
-    "image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",
-    "description": "We offer state-of-the-art marine equipment for shipping and offshore industries.",
-    "whatWeOffer": [
-      "Navigation systems",
-      "Marine communication systems",
-      "Offshore equipment"
-    ]
-  },
-  {
-    "id": 5,
-    "title": "EV Solutions",
-    "icon": "FaChargingStation",
-    "image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",
-    "description": "We provide cutting-edge electric vehicle (EV) charging solutions.",
-    "whatWeOffer": [
-      "EV charging stations",
-      "Battery management systems",
-      "Smart charging solutions"
-    ]
-  },
-  {
-    "id": 6,
-    "title": "Tech Solutions",
-    "icon": "FaBarcode",
-    "image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",
-    "description": "Our tech solutions streamline operations and enhance productivity.",
-    "whatWeOffer": [
-      "Barcode systems",
-      "Inventory management",
-      "Automation solutions"
-    ]
-  },
-  {
-    "id": 7,
-    "title": "Storage Solutions",
-    "icon": "MdSdStorage",
-    "image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",
-    "description": "We offer reliable storage solutions for data and physical assets.",
-    "whatWeOffer": [
-      "Data storage systems",
-      "Warehouse management",
-      "Cloud storage solutions"
-    ]
-  },
-  {
-    "id": 8,
-    "title": "Workshop Tools",
-    "icon": "FaChargingStation",
-    "image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",
-    "description": "We supply high-quality tools for workshops and industrial use.",
-    "whatWeOffer": [
-      "Power tools",
-      "Hand tools",
-      "Safety equipment"
-    ]
-  },
-  {
-    "id": 9,
-    "title": "Power & Equipment",
-    "icon": "MdPower",
-    "image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",
-    "description": "We provide robust power solutions and equipment for various industries.",
-    "whatWeOffer": [
-      "Generators",
-      "Power distribution systems",
-      "Renewable energy solutions"
-    ]
-  }
-],
+      "whatWeOffer": [
+        {
+          "name": "RESIDENTIAL",
+          "items": [
+            "New construction and custom home wiring",
+            "Renovations and additions",
+            "Interior decorative custom lighting",
+            "Electrical outlets and switches / upgrades",
+            "Pre-purchase electrical inspections",
+            "Full rewire and additions to installations",
+            "Periodic inspection and testing",
+            "Smoke and fire alarms",
+            "Light fixture and plug / replacements",
+            "Kitchen renovations / Pot light switch installations"
+          ]
+        },
+        {
+          "name": "COMMERCIAL AND INDUSTRIAL",
+          "items": [
+            "Commercial",
+            "Industrial",
+            "Government contracts",
+            "New Construction",
+            "Service upgrades",
+            "Lighting Upgrades",
+            "Generators",
+            "LED Lighting",
+            "Service Calls",
+            "Code Corrections",
+            "Parking Lot Lights",
+            "Medical Offices"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "SAFETY AND SECURITY",
+      "icon": "MdSecurity", 
+"image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",      "description": "Our safety and security solutions ensure the protection of your assets and personnel.",
+      "whatWeOffer": [
+        "CCTV installation",
+        "Access control systems",
+        "Fire alarm systems"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "AIRPORT HANDLING ",
+      "icon": "GiCommercialAirplane", 
+"image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",      "description": "We specialize in advanced airport systems to enhance operational efficiency and passenger experience.",
+      "whatWeOffer": [
+        "Baggage handling systems",
+        "Passenger boarding bridges",
+        "Air traffic control systems"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "MARINE EQUIPMENT",
+      "icon": "FaShip", 
+"image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",      "description": "We offer state-of-the-art marine equipment for shipping and offshore industries.",
+      "whatWeOffer": [
+        "Navigation systems",
+        "Marine communication systems",
+        "Offshore equipment"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "EV EQUIPMENT",
+      "icon": "FaChargingStation", 
+"image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",      "description": "We provide cutting-edge electric vehicle (EV) charging solutions.",
+      "whatWeOffer": [
+        "EV charging stations",
+        "Battery management systems",
+        "Smart charging solutions"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "TECHNOLOGICAL ",
+      "icon": "FaBarcode", 
+"image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",      "description": "Our tech solutions streamline operations and enhance productivity.",
+      "whatWeOffer": [
+        "Barcode systems",
+        "Inventory management",
+        "Automation solutions"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "STORAGE EQUIPMENT",
+      "icon": "MdSdStorage", 
+"image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",      "description": "We offer reliable storage solutions for data and physical assets.",
+      "whatWeOffer": [
+        "Data storage systems",
+        "Warehouse management",
+        "Cloud storage solutions"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "WORKSHOP EQUIPMENT",
+      "icon": "FaChargingStation", 
+"image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",      "description": "We supply high-quality tools for workshops and industrial use.",
+      "whatWeOffer": [
+        "Power tools",
+        "Hand tools",
+        "Safety equipment"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "POWER & EQUIPMENT",
+      "icon": "MdPower", 
+"image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",      "description": "We provide robust power solutions and equipment for various industries.",
+      "whatWeOffer": [
+        "Generators",
+        "Power distribution systems",
+        "Renewable energy solutions"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "DIGITAL AND ROBOTICS",
+      "icon": "FaRobot", 
+"image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",      "description": "We deliver innovative digital and robotics solutions to transform industries.",
+      "whatWeOffer": [
+        "Powered Warehouse Inventory Management",
+        "Robotics-Powered Picking & Packing Systems",
+        "Warehouse Automation & Optimization",
+        "IoT-Driven Real-Time Asset Monitoring",
+        "AI-Based Predictive Maintenance for Robotics",
+        "End-to-End Warehouse Management System (WMS)",
+        "Automation for Last-Mile Delivery",
+        "Computer Vision Solutions for Warehouse Operations",
+        "Digital Integration and ERP Solutions",
+        "Workforce Augmentation & Training"
+      ]
+    }
+  ],
 "trustedBy":[
   {
     "image":"https://s3-alpha-sig.figma.com/img/a9bc/fec0/4bc4f61325ace76d01591fc65479dc38?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=DhNB0YctLjASKGFaG51g15AiL6PSklabW43tHKOzCj4NpENzm93QajJ9Q6uamQmqXVGx2ZabR~IuhLE8pdiV19FgwHLYz4KESq21QQwHySdQ1f8EWgOSR5XeukR7UT7eqboSNspN-hb7u2vqaCpSBg~ehkD6NehZYLNYdv2QRNHUXkJxEYYaZJz0i9kXtjr9N5hInAHJeIAkQGDg356H6pzNmOFoByWyff8wITrQn4yAUHYNifECGWXIueF87--7-dfGoy24~Qf9p4JBmG5UqELvTbSHn-RAJFYqdeLscqOVcsW26uIy8-S0382as7awanWmEDslNb6kiGy-IgJ4yw__"

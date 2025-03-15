@@ -11,9 +11,9 @@ export default function Projects() {
     <>
       <div className="container my-7 ">
         <div className="  mx-auto">
-          <div className="flex justify-between items-end my-4">
+          <div className="flex justify-between items-center my-2 ">
             <div>
-              <h2 className="mainColor">Our Projects</h2>
+              <h2 className="mainColor text-xl font-semibold">Our Projects</h2>
             </div>
             <div>
               <Link to={"/Projects"}>
@@ -21,7 +21,7 @@ export default function Projects() {
               </Link>
             </div>
           </div>
-          <p className="text-xs my-3">
+          <p className="text-sm ">
             Our projects are a testament to innovation and excellence. From
             tailored electrical systems to sustainable energy solutions, we
             craft impactful, client-centered outcomes that inspire success and
