@@ -74,8 +74,8 @@ export default function Feedback() {
   };
   return (
     <>
-      <div className="container mx-auto my-8">
-        <div className="flex justify-center items-center gap-x-10  ">
+      <div className="container mx-auto my-8 overflow-hidden">
+        <div className="flex justify-center items-center ">
           <Slider {...settings}>
             {Feedback.length > 0 ? (
               Feedback.map((item) => (
