@@ -49,7 +49,7 @@ export default function SwiperServices() {
   }, [id]);
   useEffect(() => {
     if (!id && swiperRef.current) {
-      const slides = document.querySelectorAll(".slick-slide");
+      const slides = swiperRef.current.querySelectorAll(".slick-slide");
 
       slides.forEach((slide) => {
         const handleMouseEnter = () => {
