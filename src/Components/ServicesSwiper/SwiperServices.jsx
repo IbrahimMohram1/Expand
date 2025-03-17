@@ -113,7 +113,6 @@ export default function SwiperServices() {
           }
 
           targetSlide.style.width = `${currentWidth * 2.2}px`;
-          targetSlide.style.zIndex = "20";
         }
       }, 100); // انتظر 100 مللي ثانية للتأكد من اكتمال عمليات DOM
     }
