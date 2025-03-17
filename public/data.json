@@ -297,7 +297,40 @@
       "description": "To foster industry-leading growth through responsible business practices and value-driven solutions."
     }
   ]
-  }
+  },
+  "feedback":[
+
+    {
+      "id":1,
+      "name": "Faisal",
+      "position": "Project Manager",
+      "comment": "Excellent service and precision in execution. We’ve worked with them on several projects, and they always meet expectations with the highest quality."
+    },
+    {
+      "id":2,
+      "name": "Sami",
+      "position": "Electrical Engineer",
+      "comment": "Professionalism in work and adherence to timelines sets Expand Trading apart. Their services are diverse and cover all project needs."
+    },
+    {
+      "id":3,
+      "name": "Ahmed",
+      "position": "Maintenance Manager",
+      "comment": "We’ve collaborated with Expand Trading on multiple projects, and what stands out is their commitment to providing innovative solutions that keep up with technological advancements."
+    },
+    {     
+       "id":4,
+      "name": "Mohammed",
+      "position": "Operations Manager",
+      "comment": "Expand Trading always excels in offering comprehensive and advanced solutions. Their team is highly professional and capable of handling any challenge."
+    },
+    {
+      "id":5,
+      "name": "Nasser",
+      "position": "Safety Manager",
+      "comment": "The safety services provided by Expand Trading have become an essential part of our projects. The level of service and products aligns with the highest standards."
+    }
+  ]
 
 
   

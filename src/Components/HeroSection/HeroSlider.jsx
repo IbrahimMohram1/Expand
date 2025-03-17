@@ -1,13 +1,13 @@
 import React from "react";
 import { IoIosArrowUp } from "react-icons/io";
-import HeroImage from "../../assets/unsplash_9cCeS9Sg6nU.png";
+import HeroImage from "../../assets/HomeCover.jpg";
 import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   return (
     <section className="w-full min-h-screen flex flex-col justify-center p-5 relative">
       {/* الصورة كخلفية */}
-      <div className="w-full h-full absolute inset-0 z-0 brightness-[0.25]">
+      <div className="w-full h-full absolute inset-0 z-0">
         <img
           src={HeroImage} // غير المسار ده لصورة حقيقية
           alt="Hero Background"

@@ -9,6 +9,7 @@ export default function DataProvider({ children }) {
   const [TrustedByData, setTrustedBy] = useState([]);
   const [Projects, setProjects] = useState([]);
   const [Mission, setMission] = useState([]);
+  const [Feedback, setFeedback] = useState([]);
 
   async function GetData() {
     const { data } = await axios.get("../data.json");
@@ -35,9 +36,15 @@ export default function DataProvider({ children }) {
     const { data } = await axios.get("../data.json");
     setMission(data.OurVisionAndMission);
   }
+  async function getFeedBack() {
+    const { data } = await axios.get("../data.json");
+    setFeedback(data.feedback);
+  }
   return (
     <ContextData.Provider
       value={{
+        getFeedBack,
+        Feedback,
         expandData,
         GetData,
         CounterData,

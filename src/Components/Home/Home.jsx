@@ -17,6 +17,7 @@ import Projects from "../Projects/Projects";
 import GoalsNumber from "../GoalsNumber/GoalsNumber";
 import { Link } from "react-router-dom";
 import TrustedBy from "../TrustedBy/TrustedBy";
+import Feedback from "../Feedback/Feedback";
 
 export default function Home() {
   let { expandData, GetData } = useContext(ContextData);
@@ -132,11 +133,9 @@ export default function Home() {
               >
                 <div className="  max-w-md p-5 ">
                   {/* المحتوى */}
-                  <Link to={"/about"}>
-                    <h2 className="text-2xl font-bold mainColor">
-                      Why Choose Us{" "}
-                    </h2>
-                  </Link>
+                  <h2 className="text-2xl font-bold mainColor">
+                    Why Choose Us{" "}
+                  </h2>
 
                   <p className="mt-2 text-black text-sm">
                     With a legacy of excellence since 2015, Expand Trading Co.
@@ -159,6 +158,8 @@ export default function Home() {
       </div>
 
       <TrustedBy />
+
+      <Feedback />
       <Projects />
     </>
   );

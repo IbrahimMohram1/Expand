@@ -19,6 +19,7 @@ export default function SwiperServices() {
   const [loading, setLoading] = useState(true);
   const [initialSlide, setInitialSlide] = useState(0);
   const sliderRef = useRef(null);
+  const swiperRef = useRef(null);
 
   useEffect(() => {
     const fetchServices = async () => {
@@ -46,6 +47,41 @@ export default function SwiperServices() {
       }
     }
   }, [id]);
+  useEffect(() => {
+    if (!id && swiperRef.current) {
+      const slides = document.querySelectorAll(".slick-slide");
+
+      slides.forEach((slide) => {
+        const handleMouseEnter = () => {
+          const computedStyle = window.getComputedStyle(slide);
+          const currentWidth = parseFloat(computedStyle.width);
+
+          if (!slide.dataset.originalWidth) {
+            slide.dataset.originalWidth = currentWidth;
+          }
+
+          slide.style.width = `${currentWidth * 2.2}px`; // زيادة 40%
+          slide.style.zIndex = "";
+        };
+
+        const handleMouseLeave = () => {
+          if (slide.dataset.originalWidth) {
+            slide.style.width = `${slide.dataset.originalWidth}px`; // استعادة العرض الأصلي
+          }
+          slide.style.zIndex = "";
+        };
+
+        slide.addEventListener("mouseenter", handleMouseEnter);
+        slide.addEventListener("mouseleave", handleMouseLeave);
+
+        return () => {
+          slide.removeEventListener("mouseenter", handleMouseEnter);
+          slide.removeEventListener("mouseleave", handleMouseLeave);
+        };
+      });
+    }
+  }, [id, Services]);
+
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -117,7 +153,7 @@ export default function SwiperServices() {
   }
 
   return (
-    <div className="container mx-auto my-5 ">
+    <div className="container mx-auto my-5 " ref={swiperRef}>
       <div className="flex justify-center items-center gap-x-10">
         <Slider ref={sliderRef} {...settings}>
           {Services.length > 0 ? (
@@ -147,6 +183,7 @@ export default function SwiperServices() {
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                         borderRadius: isActive ? "0.3rem" : "",
+                        zIndex: 20, // العنصر الرئيسي
                       }}
                     >
                       <div className="mt-3">
@@ -175,16 +212,20 @@ export default function SwiperServices() {
                               <p className="text-xs">{service.title}</p>
                             </div>
                             <div>
-                              <p className="text-xs">{service?.description}</p>
+                              <p className="text-xs">
+                                {service?.description
+                                  .split(" ")
+                                  .splice(0, 20)
+                                  .join(" ")}
+                              </p>
                             </div>
                             <div>
-                              <Link
-                                to={`/services/${service.id}`}
+                              <button
                                 className="mt-3 bg-white text-black px-4 py-1 rounded-lg text-sm text-nowrap"
                                 onClick={(e) => e.stopPropagation()} // منع الانتقال للـ parent
                               >
                                 View Details
-                              </Link>
+                              </button>
                             </div>
                           </div>
                         </div>
