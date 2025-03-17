@@ -191,23 +191,23 @@
   ],
 "trustedBy":[
   {
-    "image":"../src/assets/Logo1.jpg"
+    "image":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742226121/Logo3_kenodh.jpg"
   },
   
   {
-    "image":"../src/assets/Logo2.jpg"
+    "image":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742226121/Logo4_iw7kb2.jpg"
   },
   {
-    "image":"../src/assets/Logo3.jpg"
+    "image":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742226121/Logo6_w2btbd.jpg"
   },
   {
-    "image":"/src/assets/Logo4.jpg"
+    "image":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742226120/Logo1_rqgdvt.jpg"
   },
   {
-    "image":"assets/Logo5.jpg"
+    "image":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742226119/Logo2_xbuytv.jpg"
   },
   {
-    "image":"../src/assets/Logo6.jpg"
+    "image":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742226120/Logo5_dt15kb.jpg"
   }
 
 
