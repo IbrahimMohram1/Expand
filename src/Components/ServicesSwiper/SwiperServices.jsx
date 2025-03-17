@@ -12,6 +12,7 @@ import { Link, useParams } from "react-router-dom";
 import Slider from "react-slick";
 import Rarrow from "../../assets/RightArrow.png";
 import Larrow from "../../assets/LeftArrow.png";
+import { useMediaQuery } from "react-responsive";
 
 export default function SwiperServices() {
   const { GetServices, Services } = useContext(ContextData);
@@ -20,6 +21,7 @@ export default function SwiperServices() {
   const [initialSlide, setInitialSlide] = useState(0);
   const sliderRef = useRef(null);
   const swiperRef = useRef(null);
+  const isMediumOrLarger = useMediaQuery({ query: "(min-width: 768px)" }); // md breakpoint في TailwindCSS
 
   useEffect(() => {
     const fetchServices = async () => {
@@ -81,24 +83,22 @@ export default function SwiperServices() {
       });
     }
   }, [id, Services]);
+
   useEffect(() => {
-    if (sliderRef.current && Services.length > 0 && id) {
-      // استخدم setTimeout للتأكد من أن Slick قد قام بالتحديث
+    if (isMediumOrLarger && sliderRef.current && Services.length > 0 && id) {
       setTimeout(() => {
         const slides = document.querySelectorAll(".slick-slide");
 
-        // إعادة تعيين جميع الشرائح إلى حجمها الأصلي
         slides.forEach((slide) => {
           if (slide.dataset.originalWidth) {
             slide.style.width = `${slide.dataset.originalWidth}px`;
           }
         });
 
-        // البحث عن الشريحة النشطة التي تحتوي على الخدمة المطلوبة
         const serviceIndex = Services.findIndex(
           (service) => service.id.toString() === id,
         );
-        const activeSlideIndex = serviceIndex; // بسبب كيفية ترقيم Slick للشرائح
+        const activeSlideIndex = serviceIndex;
 
         const targetSlide = document.querySelector(
           `.slick-slide[data-index="${activeSlideIndex}"]`,
@@ -114,9 +114,9 @@ export default function SwiperServices() {
 
           targetSlide.style.width = `${currentWidth * 2.2}px`;
         }
-      }, 100); // انتظر 100 مللي ثانية للتأكد من اكتمال عمليات DOM
+      }, 100);
     }
-  }, [id, Services]);
+  }, [id, Services, isMediumOrLarger]);
 
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
