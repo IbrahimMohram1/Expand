@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { ContextData } from "../Context/ContextData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
 
 export default function SwiperProjects() {
   let { GetPrjocts, Projects } = useContext(ContextData);
@@ -21,7 +22,7 @@ export default function SwiperProjects() {
             slidesPerView={5}
             breakpoints={{
               140: { slidesPerView: 1 },
-              640: { slidesPerView: 2 },
+              640: { slidesPerView: 1 },
               1024: { slidesPerView: 5 },
             }}
             navigation
