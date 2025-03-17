@@ -21,7 +21,7 @@ export default function Service() {
 
       <h2 className="mainColor text-2xl my-3 text-center">Our Services</h2>
 
-      <div className="w-[85%] mx-auto">
+      <div className="w-[85%] mx-auto overflow-hidden">
         <div className="flex justify-center md:flex-row  flex-col  text-center flex-wrap">
           {Services.length > 0 ? (
             Services.map((service) => (
@@ -37,7 +37,7 @@ export default function Service() {
         </div>
       </div>
       <SwiperServices />
-      <div className="container my-5">
+      <div className="container my-5 overflow-hidden">
         <div className=" w-full mx-auto">
           <div className="flex justify-center items-stretch md:flex-row flex-col gap-4">
             <div className="md:w-1/2 w-full">
