@@ -60,13 +60,13 @@ export default function SwiperServices() {
             slide.dataset.originalWidth = currentWidth;
           }
 
-          slide.style.width = `${currentWidth * 2.2}px`; // زيادة 40%
+          slide.style.width = `${currentWidth * 2.2}px`; //   multiplay width in 2.2 with Original Width
           slide.style.zIndex = "";
         };
 
         const handleMouseLeave = () => {
           if (slide.dataset.originalWidth) {
-            slide.style.width = `${slide.dataset.originalWidth}px`; // استعادة العرض الأصلي
+            slide.style.width = `${slide.dataset.originalWidth}px`; //   Get Original Width
           }
           slide.style.zIndex = "";
         };
@@ -79,6 +79,43 @@ export default function SwiperServices() {
           slide.removeEventListener("mouseleave", handleMouseLeave);
         };
       });
+    }
+  }, [id, Services]);
+  useEffect(() => {
+    if (sliderRef.current && Services.length > 0 && id) {
+      // استخدم setTimeout للتأكد من أن Slick قد قام بالتحديث
+      setTimeout(() => {
+        const slides = document.querySelectorAll(".slick-slide");
+
+        // إعادة تعيين جميع الشرائح إلى حجمها الأصلي
+        slides.forEach((slide) => {
+          if (slide.dataset.originalWidth) {
+            slide.style.width = `${slide.dataset.originalWidth}px`;
+          }
+        });
+
+        // البحث عن الشريحة النشطة التي تحتوي على الخدمة المطلوبة
+        const serviceIndex = Services.findIndex(
+          (service) => service.id.toString() === id,
+        );
+        const activeSlideIndex = serviceIndex; // بسبب كيفية ترقيم Slick للشرائح
+
+        const targetSlide = document.querySelector(
+          `.slick-slide[data-index="${activeSlideIndex}"]`,
+        );
+
+        if (targetSlide) {
+          const computedStyle = window.getComputedStyle(targetSlide);
+          const currentWidth = parseFloat(computedStyle.width);
+
+          if (!targetSlide.dataset.originalWidth) {
+            targetSlide.dataset.originalWidth = currentWidth;
+          }
+
+          targetSlide.style.width = `${currentWidth * 2.2}px`;
+          targetSlide.style.zIndex = "20";
+        }
+      }, 100); // انتظر 100 مللي ثانية للتأكد من اكتمال عمليات DOM
     }
   }, [id, Services]);
 
