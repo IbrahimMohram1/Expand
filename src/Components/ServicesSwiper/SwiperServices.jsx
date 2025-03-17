@@ -179,8 +179,8 @@ export default function SwiperServices() {
 
     responsive: [
       { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 1 } },
-      { breakpoint: 640, settings: { slidesToShow: 2, slidesToScroll: 1 } },
-      { breakpoint: 480, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+      { breakpoint: 640, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+      { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } },
     ],
   };
 
@@ -189,7 +189,7 @@ export default function SwiperServices() {
   }
 
   return (
-    <div className="container mx-auto my-5 " ref={swiperRef}>
+    <div className="container mx-auto my-5 " ref={swiperRef} overflow-hidden>
       <div className="flex justify-center items-center gap-x-10">
         <Slider ref={sliderRef} {...settings}>
           {Services.length > 0 ? (
