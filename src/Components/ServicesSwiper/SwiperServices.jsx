@@ -219,14 +219,11 @@ export default function SwiperServices() {
                                   .join(" ")}
                               </p>
                             </div>
-                            <div>
-                              <button
-                                className="mt-3 bg-white text-black px-4 py-1 rounded-lg text-sm text-nowrap"
-                                onClick={(e) => e.stopPropagation()} // منع الانتقال للـ parent
-                              >
+                            <Link to={`/services/${service.id}`}>
+                              <button className="mt-3 bg-white text-black px-4 py-1 rounded-lg text-sm text-nowrap">
                                 View Details
                               </button>
-                            </div>
+                            </Link>
                           </div>
                         </div>
                       ) : (
