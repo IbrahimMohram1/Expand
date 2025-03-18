@@ -9,7 +9,7 @@ export default function TrustedBy() {
 
   return (
     <>
-      <div className="w-full bg-[#F0F0F0]  p-2 my-5">
+      <div className="w-full bg-[#fff]  p-2 my-5">
         <h2 className="mainColor text-center text-xl font-semibold tracking-[5px]">
           Trusted by
         </h2>
@@ -23,7 +23,7 @@ export default function TrustedBy() {
                 >
                   <img
                     src={client.image}
-                    className="w-1/2 grayscale hover:grayscale-0 "
+                    className="w-1/2 grayscale hover:grayscale-0 duration-500 "
                   />
                 </div>
               ))
