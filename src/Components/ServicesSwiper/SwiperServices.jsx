@@ -23,6 +23,9 @@ export default function SwiperServices() {
   const swiperRef = useRef(null);
   const isMediumOrLarger = useMediaQuery({ query: "(min-width: 768px)" }); // md breakpoint في TailwindCSS
 
+  // حفظ الـ width الأصلي لكل شريحة باستخدام useRef
+  const originalWidths = useRef({});
+
   useEffect(() => {
     const fetchServices = async () => {
       try {
@@ -49,28 +52,37 @@ export default function SwiperServices() {
       }
     }
   }, [id]);
+
   useEffect(() => {
     if (!id && swiperRef.current) {
       const slides = swiperRef.current.querySelectorAll(".slick-slide");
 
-      slides.forEach((slide) => {
+      slides.forEach((slide, index) => {
         const handleMouseEnter = () => {
           const computedStyle = window.getComputedStyle(slide);
           const currentWidth = parseFloat(computedStyle.width);
 
-          if (!slide.dataset.originalWidth) {
-            slide.dataset.originalWidth = currentWidth;
+          if (!originalWidths.current[index]) {
+            originalWidths.current[index] = currentWidth; // نحفظ الـ width الأصلي
           }
 
-          slide.style.width = `${currentWidth * 2.2}px`; //   multiplay width in 2.2 with Original Width
-          slide.style.zIndex = "";
+          slide.style.transition = "width 0.3s ease-in-out";
+          slide.style.width = `${currentWidth * 2.5}px`; // نضرب الـ width في 2.2
+          slide.style.flexShrink = 1; // علشان الشريحة متضهاش
+          slide.style.zIndex = 10; // علشان الشريحة تبقى فوق
+
+          // تحريك الشريحة للنص
+          if (sliderRef.current) {
+            sliderRef.current.slickGoTo(index);
+          }
         };
 
         const handleMouseLeave = () => {
-          if (slide.dataset.originalWidth) {
-            slide.style.width = `${slide.dataset.originalWidth}px`; //   Get Original Width
+          if (originalWidths.current[index]) {
+            slide.style.width = `${originalWidths.current[index]}px`; // نرجع الـ width الأصلي
           }
-          slide.style.zIndex = "";
+          slide.style.flexShrink = 0; // علشان الشريحة تضم تاني
+          slide.style.zIndex = 1; // علشان الشريحة ترجع مكانها
         };
 
         slide.addEventListener("mouseenter", handleMouseEnter);
@@ -89,9 +101,9 @@ export default function SwiperServices() {
       setTimeout(() => {
         const slides = document.querySelectorAll(".slick-slide");
 
-        slides.forEach((slide) => {
-          if (slide.dataset.originalWidth) {
-            slide.style.width = `${slide.dataset.originalWidth}px`;
+        slides.forEach((slide, index) => {
+          if (originalWidths.current[index]) {
+            slide.style.width = `${originalWidths.current[index]}px`; // نرجع الـ width الأصلي
           }
         });
 
@@ -108,11 +120,11 @@ export default function SwiperServices() {
           const computedStyle = window.getComputedStyle(targetSlide);
           const currentWidth = parseFloat(computedStyle.width);
 
-          if (!targetSlide.dataset.originalWidth) {
-            targetSlide.dataset.originalWidth = currentWidth;
+          if (!originalWidths.current[activeSlideIndex]) {
+            originalWidths.current[activeSlideIndex] = currentWidth; // نحفظ الـ width الأصلي
           }
 
-          targetSlide.style.width = `${currentWidth * 2.2}px`;
+          targetSlide.style.width = `${currentWidth * 2.2}px`; // نضرب الـ width في 2.2
         }
       }, 100);
     }
@@ -128,7 +140,6 @@ export default function SwiperServices() {
         }}
         onClick={onClick}
       >
-        {/* تصميم الشيفرون - سهمين رمادي وسهم برتقالي */}
         <img
           src={Rarrow}
           alt="Next Arrow"
@@ -151,7 +162,6 @@ export default function SwiperServices() {
         }}
         onClick={onClick}
       >
-        {/* تصميم الشيفرون - سهمين رمادي وسهم برتقالي */}
         <img
           src={Larrow}
           alt="Prev Arrow"
@@ -170,17 +180,19 @@ export default function SwiperServices() {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: "0px",
-    initialSlide: initialSlide, // تحديد الـ initialSlide
+    centerMode: true, // تفعيل centerMode
+    centerPadding: "60px", // تعديل القيمة علشان الشرائح تظهر بالكامل
+    initialSlide: initialSlide,
     nextArrow: !id ? <SampleNextArrow /> : null,
     prevArrow: !id ? <SamplePrevArrow /> : null,
     dots: !!id,
-
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 1 } },
-      { breakpoint: 640, settings: { slidesToShow: 1, slidesToScroll: 1 } },
-      { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+      {
+        breakpoint: 1024,
+        settings: { slidesToShow: 3, centerPadding: "40px" },
+      }, // تعديل القيمة للشاشات الكبيرة
+      { breakpoint: 640, settings: { slidesToShow: 1, centerPadding: "20px" } }, // تعديل القيمة للشاشات الصغيرة
+      { breakpoint: 480, settings: { slidesToShow: 1, centerPadding: "10px" } },
     ],
   };
 
@@ -195,7 +207,7 @@ export default function SwiperServices() {
       overflow-hidden
     >
       <div className="flex justify-center items-center gap-x-10">
-        <Slider ref={sliderRef} {...settings}>
+        <Slider {...settings}>
           {Services.length > 0 ? (
             Services.map((service) => {
               const IconComponent =
@@ -213,7 +225,8 @@ export default function SwiperServices() {
                 <Link to={`/services/${service.id}`} key={service.id}>
                   <div className="relative mb-2">
                     <div
-                      className={`MainBg text-white p-4 rounded-lg w-full flex flex-col justify-start items-center h-72 shadow-lg  transition-all duration-300 ${
+                      ref={sliderRef}
+                      className={`MainBg text-white p-4 rounded-lg w-full flex flex-col justify-start items-center h-72 shadow-lg transition-all duration-300 ${
                         isActive ? "scale-100" : "" // تكبير الـ active service
                       }`}
                       style={{
@@ -240,7 +253,7 @@ export default function SwiperServices() {
                       {/* Overlay يظهر عند الهوفر */}
                       {!id ? (
                         <div
-                          className="absolute inset-0 bg-black/70 rounded-lg flex flex-col justify-center w-full h-full items-center opacity-0 hover:opacity-100 transition-opacity duration-700 text-white text-center  "
+                          className="absolute inset-0 bg-black/70 rounded-lg flex flex-col justify-center w-full h-full items-center opacity-0 hover:opacity-100 transition-opacity duration-700 text-white text-center"
                           style={{
                             backgroundImage: `url(${service.image})`,
                             backgroundSize: "cover",
