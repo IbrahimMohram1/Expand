@@ -212,34 +212,118 @@
 
 
 ],
-"Projects":[
-  {
-    "id":101,
-    "image":"https://s3-alpha-sig.figma.com/img/177e/1814/b10de511a6d794394ff4cc1e5fcea43e?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=dP6F~Py-Eolkl~FQ56xuH08ZNGgJARyp5VYBYzSI2Xlqhntw6r4FX3cKIuJkq8lTWHIBJG1zOKTUCeYN85qL3P4Bza4n45EtnK5eP4rd~lDzMKtNfqwAJyHRwZYrGkr6Btr4py9lm6QWCwLx2uKmvJehmq8mTVdkvlGRr1AXXKtWhOhGGyvCAYANn4ey2r2fz4ij7oKTzOtoobyLnO6wmeNtci3FbSoJ5KTncH-8B02YP5eHzTjpjGcJOf0YrRr3JBNURAiS1xHmeICPP8oQ2gQ74y0aCmT~dYa7K9uOXFk8vs2jYMJbimKrkD1bIdP3ch64m7gAlSJt6jSlm3gdeQ__",
-    "name":"Red Sea"
-  
-  },
-  {
-    "id":102,
-    "image":"https://s3-alpha-sig.figma.com/img/0f63/0a5d/cbb4c864f15ed1c1018b6f276523fd9b?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=S~n1k70xxpgvfdd~DjRsVlQ5TyOVzBnLGFcafbptuCT6JeeQLuIt~iMVzrzSL4uHJ0u5OWtME8qGeTh2Vot6mJBjQTgv0c0K9ZxVeGiTfd4HCqb9Ky4WM79Qwk94uXKHQV-BAIGrBdZP4HA5iHCWtgzBu60ot4FPSCCt0aL7dNrRRZjFyqhq-XowyXAsxANJwmvi-MbUqvWpERc4lxGFMigj3liEhZrDYBOsrEmCubU~UQG0gnVMjvmwAdKsg0SEFUe9aqi8abhAX4SnQUSCtyVZrZEyx1LzlRwJUGtKE8Mwms9qP-Cr2JO56UbXZxuV-EjUO6FPb1H9aeq329fXNQ__",
-    "name":"King Abdulaziz Airport"
-  },
-   {
-    "id":103,
-    "image":"https://s3-alpha-sig.figma.com/img/0f63/0a5d/cbb4c864f15ed1c1018b6f276523fd9b?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=S~n1k70xxpgvfdd~DjRsVlQ5TyOVzBnLGFcafbptuCT6JeeQLuIt~iMVzrzSL4uHJ0u5OWtME8qGeTh2Vot6mJBjQTgv0c0K9ZxVeGiTfd4HCqb9Ky4WM79Qwk94uXKHQV-BAIGrBdZP4HA5iHCWtgzBu60ot4FPSCCt0aL7dNrRRZjFyqhq-XowyXAsxANJwmvi-MbUqvWpERc4lxGFMigj3liEhZrDYBOsrEmCubU~UQG0gnVMjvmwAdKsg0SEFUe9aqi8abhAX4SnQUSCtyVZrZEyx1LzlRwJUGtKE8Mwms9qP-Cr2JO56UbXZxuV-EjUO6FPb1H9aeq329fXNQ__",
-    "name":"King Abdulaziz Airport"
-  },
-   {
-    "id":104,
-    "image":"https://s3-alpha-sig.figma.com/img/0f63/0a5d/cbb4c864f15ed1c1018b6f276523fd9b?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=S~n1k70xxpgvfdd~DjRsVlQ5TyOVzBnLGFcafbptuCT6JeeQLuIt~iMVzrzSL4uHJ0u5OWtME8qGeTh2Vot6mJBjQTgv0c0K9ZxVeGiTfd4HCqb9Ky4WM79Qwk94uXKHQV-BAIGrBdZP4HA5iHCWtgzBu60ot4FPSCCt0aL7dNrRRZjFyqhq-XowyXAsxANJwmvi-MbUqvWpERc4lxGFMigj3liEhZrDYBOsrEmCubU~UQG0gnVMjvmwAdKsg0SEFUe9aqi8abhAX4SnQUSCtyVZrZEyx1LzlRwJUGtKE8Mwms9qP-Cr2JO56UbXZxuV-EjUO6FPb1H9aeq329fXNQ__",
-    "name":"King Abdulaziz Airport"
-  },
-   {
-    "id":105,
-    "image":"https://s3-alpha-sig.figma.com/img/0f63/0a5d/cbb4c864f15ed1c1018b6f276523fd9b?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=S~n1k70xxpgvfdd~DjRsVlQ5TyOVzBnLGFcafbptuCT6JeeQLuIt~iMVzrzSL4uHJ0u5OWtME8qGeTh2Vot6mJBjQTgv0c0K9ZxVeGiTfd4HCqb9Ky4WM79Qwk94uXKHQV-BAIGrBdZP4HA5iHCWtgzBu60ot4FPSCCt0aL7dNrRRZjFyqhq-XowyXAsxANJwmvi-MbUqvWpERc4lxGFMigj3liEhZrDYBOsrEmCubU~UQG0gnVMjvmwAdKsg0SEFUe9aqi8abhAX4SnQUSCtyVZrZEyx1LzlRwJUGtKE8Mwms9qP-Cr2JO56UbXZxuV-EjUO6FPb1H9aeq329fXNQ__",
-    "name":"King Abdulaziz Airport"
-  }
-],
+
+  "Projects": [
+    {
+      "id": 101,
+      "image": "https://up6.cc/2025/03/174223622839531.jpeg",
+      "name": "Red Sea",
+      "description": "We provided our services across key facilities including the airport, Shibara, Ritz-Carlton Hotel, 6 Senses Hotel, and St. Regis Hotel, offering electrical, security, and technological solutions.",
+      "ProjectsServices": [
+        {
+          "title": "Electrical Services",
+          "description": "We implemented comprehensive electrical solutions, including interior and exterior lighting, electrical installations, maintenance, and various upgrades."
+        },
+        {
+
+          "title": "Safety and Security Systems",
+          "description": "We provided safety equipment such as eye wash stations, fire alarms, and security systems for sensitive facilities."
+        },
+        {
+          "title": "Facility Management Systems",
+          "description": "Advanced technologies like robotics and electronic systems for warehouse management, optimizing processes, and increasing efficiency."
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "image": "https://up6.cc/2025/03/174223707005531.jpg",
+      "name": "King Abdulaziz Airport",
+      "description": "We provided integrated services including electrical, security, and facility management solutions to ensure the airport operates at peak efficiency.",
+      "ProjectsServices": [
+        {
+          "title": "Electrical Services",
+          "description": "We implemented comprehensive electrical solutions, including interior and exterior lighting, electrical installations, maintenance, and various upgrades."
+        },
+        {
+          "title": "Safety and Security Systems",
+          "description": "We provided safety equipment such as eye wash stations, fire alarms, and security systems for sensitive facilities."
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "image": "https://up6.cc/2025/03/17422368023431.png",
+      "name": "King Khalid Airport",
+      "description": "Our services included advanced security and safety solutions, as well as electrical system improvements to meet the demands of a modern airport.",
+      "ProjectsServices": [
+        {
+          "title": "Electrical Services",
+          "description": "We implemented comprehensive electrical solutions, including interior and exterior lighting, electrical installations, maintenance, and various upgrades."
+        },
+        {
+          "title": "Safety and Security Systems",
+          "description": "We provided safety equipment such as eye wash stations, fire alarms, and security systems for sensitive facilities."
+        },
+        {
+          "title": "Mechanical and Electrical Systems",
+          "description": "We provided integrated mechanical and electrical equipment for buildings and critical facilities, including generators, lighting, and technological systems."
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "image": "https://up6.cc/2025/03/17422365239461.png",
+      "name": "Taif Airport",
+      "description": "Our services included electrical system upgrades, safety equipment provision, and advanced technology integration to create a safe and efficient environment.",
+      "ProjectsServices": [
+        {
+          "title": "Electrical Services",
+          "description": "We implemented comprehensive electrical solutions, including interior and exterior lighting, electrical installations, maintenance, and various upgrades."
+        },
+        {
+          "title": "Safety and Security Systems",
+          "description": "We provided safety equipment such as eye wash stations, fire alarms, and security systems for sensitive facilities."
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "image": "https://up6.cc/2025/03/174223578879261.jpeg",
+      "name": "Haramain Project",
+      "description": "We provided multiple solutions in electrical, safety, and mechanical systems, ensuring the project was developed to the highest level of efficiency.",
+      "ProjectsServices": [
+        {
+          "title": "Electrical Services",
+          "description": "We implemented comprehensive electrical solutions, including interior and exterior lighting, electrical installations, maintenance, and various upgrades."
+        },
+        {
+          "title": "Mechanical and Electrical Systems",
+          "description": "We provided integrated mechanical and electrical equipment for buildings and critical facilities, including generators, lighting, and technological systems."
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "image": "https://up6.cc/2025/03/174223736709131.jpg",
+      "name": "St. Regis Resort",
+      "description": "We provided comprehensive solutions, including electrical, security, and facility management systems, to ensure the seamless operation of St. Regis Resort. Our services encompassed advanced lighting, safety systems, and energy-efficient technologies, enhancing the resort’s luxury experience and operational efficiency.",
+      "ProjectsServices": [
+        {
+          "title": "Electrical Services",
+          "description": "We implemented comprehensive electrical solutions, including interior and exterior lighting, electrical installations, maintenance, and various upgrades."
+        },
+        {
+          "title": "Safety and Security Systems",
+          "description": "We provided safety equipment such as eye wash stations, fire alarms, and security systems for sensitive facilities."
+        },
+        {
+          "title": "Facility Management Systems",
+          "description": "Advanced technologies like robotics and electronic systems for warehouse management, optimizing processes, and increasing efficiency."
+        }
+      ]
+    }
+  ],
 "OurVisionAndMission":
   {
      "vision": [

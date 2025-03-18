@@ -117,7 +117,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     onClick={closeNavbar}
-                    to="Projects"
+                    to="Projects/101"
                     className="block px-3 py-2 text-white text-sm"
                   >
                     Projects
