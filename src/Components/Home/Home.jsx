@@ -100,7 +100,7 @@ export default function Home() {
 
       <Services />
 
-      <div className="container my-9 mb-24">
+      <div className="container my-9 md:mb-24">
         <div className=" mx-auto">
           <div className="flex flex-col md:flex-row gap-y-12 justify-center items-center ">
             <div className="md:w-1/2 w-full">
@@ -116,12 +116,12 @@ export default function Home() {
                 <img
                   src={shunk2}
                   alt="foreground"
-                  className="absolute top-16 left-14 md:left-36 lg:left-56 md:top-32 w-44 md:w-48 lg:w-56 h-auto rounded-lg border-4  border-white shadow-lg"
+                  className="absolute top-28 left-14 md:left-36 lg:left-56 md:top-32 w-44 md:w-48 lg:w-56 h-auto rounded-lg border-4  border-white shadow-lg"
                 />
               </div>
             </div>
 
-            <div className="md:w-1/2 w-full">
+            <div className="md:w-1/2 w-full md:mt-0 mt-8">
               {/* Who We Are */}
               <div
                 style={{

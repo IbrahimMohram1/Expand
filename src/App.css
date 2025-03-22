@@ -32,11 +32,12 @@ writing-mode: sideways-lr;
 }
 .slick-track{
     display: flex !important ;
-    gap: 15px !important;
 }
+
 html{
     font-size: 21px;
 }
+
 .slick-dots{
     margin-top: 10px !important;
 }
@@ -54,4 +55,6 @@ p{
 .slick-next:before{
     content: none !important;
 }
+
+
 

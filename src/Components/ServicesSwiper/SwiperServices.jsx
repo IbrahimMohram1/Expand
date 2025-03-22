@@ -20,7 +20,7 @@ export default function SwiperServices() {
   const [loading, setLoading] = useState(true);
   const [initialSlide, setInitialSlide] = useState(0);
   const sliderRef = useRef(null);
-  const swiperRef = useRef(null);
+  const containerRef = useRef(null);
   const isMediumOrLarger = useMediaQuery({ query: "(min-width: 768px)" }); // md breakpoint في TailwindCSS
 
   useEffect(() => {
@@ -48,76 +48,163 @@ export default function SwiperServices() {
         }
       }
     }
-  }, [id]);
-  useEffect(() => {
-    if (!id && swiperRef.current) {
-      const slides = swiperRef.current.querySelectorAll(".slick-slide");
+  }, [id, Services]);
 
-      slides.forEach((slide) => {
+  // تعريف دالة لتطبيق تأثيرات الهوفر على الشرائح النشطة
+  const setupHoverEffects = () => {
+    if (!containerRef.current) return;
+
+    const allSlides = containerRef.current.querySelectorAll(".slick-slide");
+
+    // إزالة مستمعات الأحداث القديمة أولاً
+    allSlides.forEach((slide) => {
+      if (slide.handleMouseEnter) {
+        slide.removeEventListener("mouseenter", slide.handleMouseEnter);
+        delete slide.handleMouseEnter;
+      }
+      if (slide.handleMouseLeave) {
+        slide.removeEventListener("mouseleave", slide.handleMouseLeave);
+        delete slide.handleMouseLeave;
+      }
+    });
+
+    // حفظ العرض الأصلي لجميع الشرائح
+    allSlides.forEach((slide) => {
+      if (!slide.dataset.originalWidth) {
+        const style = window.getComputedStyle(slide);
+        slide.dataset.originalWidth = parseFloat(style.width);
+      }
+    });
+
+    // إضافة مستمعات أحداث للشرائح النشطة فقط
+    allSlides.forEach((slide) => {
+      if (slide.getAttribute("aria-hidden") === "false") {
         const handleMouseEnter = () => {
-          const computedStyle = window.getComputedStyle(slide);
-          const currentWidth = parseFloat(computedStyle.width);
+          // زيادة عرض الـ slide التي عليها hover
+          slide.style.width = `${slide.dataset.originalWidth * 2.2}px`;
 
-          if (!slide.dataset.originalWidth) {
-            slide.dataset.originalWidth = currentWidth;
-          }
-
-          slide.style.width = `${currentWidth * 2.2}px`; //   multiplay width in 2.2 with Original Width
-          slide.style.zIndex = "";
+          // تقليل عرض العناصر الباقية
+          allSlides.forEach((otherSlide) => {
+            if (
+              otherSlide !== slide &&
+              otherSlide.getAttribute("aria-hidden") === "false"
+            ) {
+              otherSlide.style.width = `${
+                otherSlide.dataset.originalWidth * 0.7
+              }px`;
+            }
+          });
         };
 
         const handleMouseLeave = () => {
-          if (slide.dataset.originalWidth) {
-            slide.style.width = `${slide.dataset.originalWidth}px`; //   Get Original Width
-          }
-          slide.style.zIndex = "";
+          // إعادة جميع العناصر لعرضها الأصلي
+          allSlides.forEach((s) => {
+            if (s.dataset.originalWidth) {
+              s.style.width = `${s.dataset.originalWidth}px`;
+            }
+          });
         };
 
+        // إضافة مستمعات الأحداث
         slide.addEventListener("mouseenter", handleMouseEnter);
         slide.addEventListener("mouseleave", handleMouseLeave);
 
-        return () => {
-          slide.removeEventListener("mouseenter", handleMouseEnter);
-          slide.removeEventListener("mouseleave", handleMouseLeave);
-        };
-      });
+        // حفظ مراجع للدوال
+        slide.handleMouseEnter = handleMouseEnter;
+        slide.handleMouseLeave = handleMouseLeave;
+      }
+    });
+  };
+
+  // دالة لمعالجة تغيير الشريحة
+  const handleAfterChange = () => {
+    // تطبيق تأثيرات الهوفر بعد التغيير
+    setTimeout(setupHoverEffects, 50); // تأخير صغير للتأكد من اكتمال عملية التغيير
+  };
+
+  // تأثير لإضافة مستمعات الأحداث في البداية وعند تغير البيانات
+  useEffect(() => {
+    if (!id && containerRef.current && Services.length > 0) {
+      // تأخير صغير للتأكد من رسم السلايدر بشكل كامل
+      setTimeout(setupHoverEffects, 100);
     }
   }, [id, Services]);
 
+  // تطبيق تأثير الهوفر في حالة وجود ID محدد
   useEffect(() => {
     if (isMediumOrLarger && sliderRef.current && Services.length > 0 && id) {
-      setTimeout(() => {
+      // تعريف دالة لتطبيق التأثير المطلوب على الشريحة النشطة
+      const setupActiveSlideEffect = () => {
         const slides = document.querySelectorAll(".slick-slide");
 
+        // حفظ العرض الأصلي لجميع الشرائح إذا لم يتم حفظه من قبل
+        slides.forEach((slide) => {
+          if (!slide.dataset.originalWidth) {
+            const computedStyle = window.getComputedStyle(slide);
+            slide.dataset.originalWidth = parseFloat(computedStyle.width);
+          }
+        });
+
+        // البحث عن الشريحة النشطة بناءً على المعرف
+        const serviceIndex = Services.findIndex(
+          (service) => service.id.toString() === id,
+        );
+
+        const targetSlide = document.querySelector(
+          `.slick-slide[data-index="${serviceIndex}"]`,
+        );
+
+        // إعادة جميع الشرائح إلى العرض الأصلي أولاً
         slides.forEach((slide) => {
           if (slide.dataset.originalWidth) {
             slide.style.width = `${slide.dataset.originalWidth}px`;
           }
         });
 
-        const serviceIndex = Services.findIndex(
-          (service) => service.id.toString() === id,
-        );
-        const activeSlideIndex = serviceIndex;
-
-        const targetSlide = document.querySelector(
-          `.slick-slide[data-index="${activeSlideIndex}"]`,
-        );
-
+        // تطبيق التأثير على الشريحة النشطة (المستهدفة)
         if (targetSlide) {
-          const computedStyle = window.getComputedStyle(targetSlide);
-          const currentWidth = parseFloat(computedStyle.width);
+          const originalWidth = parseFloat(
+            targetSlide.dataset.originalWidth || 0,
+          );
+          if (originalWidth) {
+            // زيادة عرض الشريحة النشطة
+            targetSlide.style.width = `${originalWidth * 2.2}px`;
 
-          if (!targetSlide.dataset.originalWidth) {
-            targetSlide.dataset.originalWidth = currentWidth;
+            // تقليل عرض الشرائح المرئية الأخرى
+            slides.forEach((slide) => {
+              if (
+                slide !== targetSlide &&
+                slide.getAttribute("aria-hidden") === "false"
+              ) {
+                const slideOriginalWidth = parseFloat(
+                  slide.dataset.originalWidth,
+                );
+                slide.style.width = `${slideOriginalWidth * 0.7}px`;
+              }
+            });
           }
-
-          targetSlide.style.width = `${currentWidth * 2.2}px`;
         }
-      }, 100);
+      };
+
+      // تنفيذ مرة واحدة فقط عند تغيير id أو Services
+      setTimeout(setupActiveSlideEffect, 100);
+
+      // إضافة حدث عند تغيير الشريحة (اختياري - إذا كنت تريد)
+      const slider = document.querySelector(".slick-slider");
+      if (slider) {
+        const handleAfterChange = () => {
+          setTimeout(setupActiveSlideEffect, 50);
+        };
+
+        slider.addEventListener("afterChange", handleAfterChange);
+
+        // تنظيف
+        return () => {
+          slider.removeEventListener("afterChange", handleAfterChange);
+        };
+      }
     }
   }, [id, Services, isMediumOrLarger]);
-
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -128,7 +215,6 @@ export default function SwiperServices() {
         }}
         onClick={onClick}
       >
-        {/* تصميم الشيفرون - سهمين رمادي وسهم برتقالي */}
         <img
           src={Rarrow}
           alt="Next Arrow"
@@ -151,7 +237,6 @@ export default function SwiperServices() {
         }}
         onClick={onClick}
       >
-        {/* تصميم الشيفرون - سهمين رمادي وسهم برتقالي */}
         <img
           src={Larrow}
           alt="Prev Arrow"
@@ -176,6 +261,7 @@ export default function SwiperServices() {
     nextArrow: !id ? <SampleNextArrow /> : null,
     prevArrow: !id ? <SamplePrevArrow /> : null,
     dots: !!id,
+    afterChange: !id && isMediumOrLarger ? handleAfterChange : null, // إضافة afterChange callback فقط في الشاشات الكبيرة
 
     responsive: [
       { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 1 } },
@@ -189,11 +275,7 @@ export default function SwiperServices() {
   }
 
   return (
-    <div
-      className="container mx-auto my-5 overflow-hidden"
-      ref={swiperRef}
-      overflow-hidden
-    >
+    <div className="container mx-auto my-5 overflow-hidden" ref={containerRef}>
       <div className="flex justify-center items-center gap-x-10">
         <Slider ref={sliderRef} {...settings}>
           {Services.length > 0 ? (
@@ -211,7 +293,7 @@ export default function SwiperServices() {
 
               return (
                 <Link to={`/services/${service.id}`} key={service.id}>
-                  <div className="relative mb-2">
+                  <div className="relative mb-2 mx-1">
                     <div
                       className={`MainBg text-white p-4 rounded-lg w-full flex flex-col justify-start items-center h-72 shadow-lg  transition-all duration-300 ${
                         isActive ? "scale-100" : "" // تكبير الـ active service

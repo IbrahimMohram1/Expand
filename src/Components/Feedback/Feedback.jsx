@@ -80,7 +80,7 @@ export default function Feedback() {
             {Feedback.length > 0 ? (
               Feedback.map((item) => (
                 <div className="flex " key={item.id}>
-                  <div className=" bg-white border p-5 h-64 flex flex-col gap-0 rounded-lg shadow-lg ">
+                  <div className=" bg-white border p-4 h-72 flex flex-col gap-0 rounded-lg shadow-lg  mx-1">
                     {/* أيقونة الاقتباس */}
                     <div>
                       <svg
@@ -115,8 +115,8 @@ export default function Feedback() {
                     </p>
 
                     {/* معلومات العميل */}
-                    <div className="flex items-center justify-between">
-                      <div className="flex  flex-shrink-0">
+                    <div className="flex items-center justify-around w-[80%] mr-auto">
+                      <div className="flex  flex-row ">
                         <div className="w-10 h-10 rounded-full">
                           <img src={menIcon} />
                         </div>

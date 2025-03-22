@@ -9,8 +9,8 @@ export default function TrustedBy() {
 
   return (
     <>
-      <div className="w-full bg-[#fff]  p-2 my-5">
-        <h2 className="mainColor text-center text-xl font-semibold tracking-[5px]">
+      <div className="w-full bg-[#fff]  md:p-2 md:my-5 my-0">
+        <h2 className="mainColor text-center text-2xl font-bold mainColor ">
           Trusted by
         </h2>
         <div className="w-3/4 mx-auto py-4">

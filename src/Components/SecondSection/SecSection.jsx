@@ -19,7 +19,7 @@ export default function SecSection({ image, who, p }) {
               <h1 className="mainColor text-xl font-semibold tracking-[1px] my-3">
                 {who}
               </h1>
-              <p className="text-sm leading-5 tracking-[1.5px]">{p}</p>
+              <p className="text-sm leading-5 ">{p}</p>
             </div>
           </div>
         </div>
