@@ -55,6 +55,25 @@ p{
 .slick-next:before{
     content: none !important;
 }
+.custom-capitalize {
+    text-transform: capitalize;
+}
 
+@media screen and (max-width: 768px) {
+    .slick-next {
+        right: -20px !important;
+    }
 
-
+    .slick-prev {
+        left: -20px !important ;
+    }
+}
+.active p {
+    border-bottom: 1px solid #2C2A61;
+    width: max-content;
+    padding-bottom: 5px;
+        /* Add space between text and border */
+}
+.noLineHeight{
+    line-height: normal !important;
+}

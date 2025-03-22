@@ -3,7 +3,7 @@ import MainImage from "../../assets/serviceBackground.jfif";
 import MainSection from "../MainSection/MainSection";
 import { ContextData } from "../Context/ContextData";
 import SwiperServices from "../ServicesSwiper/SwiperServices";
-import { Link, useParams } from "react-router-dom";
+import { Link, NavLink, useParams } from "react-router-dom";
 export default function Service() {
   let { GetServices, Services } = useContext(ContextData);
   let { id } = useParams();
@@ -22,14 +22,23 @@ export default function Service() {
       <h2 className="mainColor text-2xl my-3 text-center">Our Services</h2>
 
       <div className="w-[85%] mx-auto overflow-hidden">
-        <div className="flex justify-center md:flex-row  flex-col  text-center flex-wrap">
+        <div className="flex justify-center md:flex-row  flex-row  text-center flex-wrap">
           {Services.length > 0 ? (
             Services.map((service) => (
-              <Link to={`/services/${service.id}`} key={service.id}>
+              <NavLink to={`/services/${service.id}`} key={service.id}>
                 <div className="md:w-full mx-2 my-2 text-nowrap  flex-wrap flex justify-center items-center">
-                  <p className="text-xs text-center">{service.title}</p>
+                  <p className="text-xs text-center">
+                    {service.title
+                      .split(" ") // قسم النص إلى كلمات
+                      .map(
+                        (word) =>
+                          word.charAt(0).toUpperCase() +
+                          word.slice(1).toLowerCase(),
+                      ) // أول حرف كبير
+                      .join(" ")}{" "}
+                  </p>
                 </div>
-              </Link>
+              </NavLink>
             ))
           ) : (
             <p>No Services Found </p>
@@ -44,13 +53,12 @@ export default function Service() {
               <img
                 src={service.image}
                 alt={service.title}
-                className="w-full h-full object-cover rounded-lg" // جعل الصورة تأخذ الارتفاع الكامل
+                className="w-full h-full object-cover rounded-lg"
               />
             </div>
             <div className="md:w-1/2 w-full">
               <div className="h-full">
                 {" "}
-                {/* جعل العنصر يأخذ الارتفاع الكامل */}
                 <h1 className="text-2xl font-bold mb-4 mainColor">
                   {service.title}
                 </h1>
@@ -58,7 +66,6 @@ export default function Service() {
                 <h2 className="text-lg font-semibold mb-2 mainColor">
                   What We Offer:
                 </h2>
-                {/* التحقق إذا كان whatWeOffer يحتوي على عناصر بها خاصية name (يعني أنها متعددة وليست مجرد قائمة بسيطة) */}
                 {service.whatWeOffer.length > 0 &&
                 service.whatWeOffer[0].name ? (
                   // إذا كانت متعددة (مثل RESIDENTIAL + COMMERCIAL) نعرضها بجانب بعضها

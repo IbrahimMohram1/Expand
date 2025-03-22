@@ -4,7 +4,27 @@ import HeroImage from "../../assets/HomeCover.jpg";
 import { Link } from "react-router-dom";
 
 export default function HeroSection() {
-  const [isHovered, setIsHovered] = useState(false);
+  const [hoveredId, setHoveredId] = useState(null);
+  const sections = [
+    {
+      id: 1,
+      title: "Manufacture & Distribution",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, explicabo.",
+    },
+    {
+      id: 2,
+      title: "Products",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, explicabo.",
+    },
+    {
+      id: 3,
+      title: "Install",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, explicabo.",
+    },
+  ];
 
   return (
     <section className="w-full min-h-screen flex flex-col justify-center p-5 relative">
@@ -39,79 +59,37 @@ export default function HeroSection() {
 
       {/* الـ HR والعناصر التحتية */}
       <div className="absolute md:bottom-5 bottom-0 left-0 right-0 z-10 w-full md:w-[90%] mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4 mt-2 p-2 ">
-          <div
-            className="md:w-1/3 w-full"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            <div className="flex items-start gap-x-2 text-white flex-col">
-              <div className="flex flex-row gap-x-2 duration-1000">
-                {isHovered ? (
-                  <IoIosArrowDown className="rounded-full bg-[#D74D1E] p-1 transition-all duration-1000" />
-                ) : (
-                  <IoIosArrowUp className="rounded-full bg-[#D74D1E] p-1 transition-all duration-1000" />
-                )}
-                <p className="text-[20px]">Manufacture & Distribution</p>
+        <div className="flex flex-col md:flex-row justify-between items-center  mt-2 p-2 gap-y-3">
+          {sections.map((section) => (
+            <div
+              key={section.id}
+              className={`md:w-1/3 w-full md:border-t-2  md:border-[#2C2A61] md:border-1 ${
+                hoveredId === section.id ? "mx-3" : "mx-0"
+              }`}
+              onMouseEnter={() => setHoveredId(section.id)}
+              onMouseLeave={() => setHoveredId(null)}
+            >
+              <div className="flex items-start gap-x-2 text-white flex-col mt-2">
+                <div className="flex flex-row gap-x-2 duration-1000">
+                  {hoveredId === section.id ? (
+                    <IoIosArrowDown className="rounded-full bg-[#D74D1E] p-1 transition-all duration-1000" />
+                  ) : (
+                    <IoIosArrowUp className="rounded-full bg-[#D74D1E] p-1 transition-all duration-1000" />
+                  )}
+                  <p className="text-[20px]">{section.title}</p>
+                </div>
+                <span
+                  className={`w-[85%] text-left text-xs transition-all duration-500 overflow-hidden ${
+                    hoveredId === section.id
+                      ? "h-auto max-h-40 opacity-100 mb-5"
+                      : "max-h-0 opacity-0"
+                  }`}
+                >
+                  {section.description}
+                </span>
               </div>
-              <span
-                className={`w-[85%] text-left text-xs transition-all duration-500  ${
-                  isHovered ? "h-auto opacity-100" : "max-h-0 opacity-0"
-                }`}
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aliquid, explicabo.
-              </span>
             </div>
-          </div>
-          <div
-            className="md:w-1/3 w-full"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            <div className="flex items-start gap-x-2 text-white flex-col">
-              <div className="flex flex-row gap-x-2 duration-1000">
-                {isHovered ? (
-                  <IoIosArrowDown className="rounded-full bg-[#D74D1E] p-1 transition-all duration-1000" />
-                ) : (
-                  <IoIosArrowUp className="rounded-full bg-[#D74D1E] p-1 transition-all duration-1000" />
-                )}
-                <p className="text-[20px]">Products</p>
-              </div>
-              <span
-                className={`w-[85%] text-left text-xs transition-all duration-500  ${
-                  isHovered ? "h-auto opacity-100" : "max-h-0 opacity-0"
-                }`}
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aliquid, explicabo.
-              </span>
-            </div>
-          </div>
-          <div
-            className="md:w-1/3 w-full"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            <div className="flex items-start gap-x-2 text-white flex-col">
-              <div className="flex flex-row gap-x-2 duration-1000">
-                {isHovered ? (
-                  <IoIosArrowDown className="rounded-full bg-[#D74D1E] p-1 transition-all duration-1000" />
-                ) : (
-                  <IoIosArrowUp className="rounded-full bg-[#D74D1E] p-1 transition-all duration-1000" />
-                )}
-                <p className="text-[20px]">Install</p>
-              </div>
-              <span
-                className={`w-[85%] text-left text-xs transition-all duration-500  ${
-                  isHovered ? "h-auto opacity-100" : "max-h-0 opacity-0"
-                }`}
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aliquid, explicabo.
-              </span>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

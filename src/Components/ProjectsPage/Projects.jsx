@@ -5,7 +5,7 @@ import SecSection from "../SecondSection/SecSection";
 import SwiperProjects from "../SwiperProjects/SwiperProjects";
 import TrustedBy from "../TrustedBy/TrustedBy";
 import { ContextData } from "../Context/ContextData";
-import { Link, useParams } from "react-router-dom";
+import { Link, NavLink, useParams } from "react-router-dom";
 
 export default function Projects() {
   const { GetPrjocts, Projects } = useContext(ContextData);
@@ -33,6 +33,25 @@ export default function Projects() {
           Project, we utilized all our diverse services to ensure comprehensive
           and high-quality solutions. Our services include:
         </p>
+        <div className="w-[85%] mx-auto overflow-hidden">
+          <div className="flex justify-center md:flex-row flex-col text-center flex-wrap">
+            {Projects.length > 0 ? (
+              Projects.map((project) => (
+                <NavLink to={`/Projects/${project.id}`} key={project.id}>
+                  <div className="md:w-full mx-2 my-2 text-nowrap flex-wrap flex justify-center items-center">
+                    <p className="text-xs text-center noLineHeight">
+                      {project.name}
+                    </p>
+                  </div>
+                </NavLink>
+              ))
+            ) : (
+              <p>No Projects Found</p>
+            )}
+          </div>
+        </div>
+
+        <SwiperProjects />
 
         {/* عرض تفاصيل المشروع المحدد */}
         {project ? (
@@ -67,23 +86,6 @@ export default function Projects() {
       </div>
 
       {/* عرض قائمة المشاريع */}
-      <div className="w-[85%] mx-auto overflow-hidden">
-        <div className="flex justify-center md:flex-row flex-col text-center flex-wrap">
-          {Projects.length > 0 ? (
-            Projects.map((project) => (
-              <Link to={`/Projects/${project.id}`} key={project.id}>
-                <div className="md:w-full mx-2 my-2 text-nowrap flex-wrap flex justify-center items-center">
-                  <p className="text-xs text-center">{project.name}</p>
-                </div>
-              </Link>
-            ))
-          ) : (
-            <p>No Projects Found</p>
-          )}
-        </div>
-      </div>
-
-      <SwiperProjects />
 
       <div className="container">
         {project ? (

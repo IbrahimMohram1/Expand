@@ -115,7 +115,7 @@ export default function Feedback() {
                     </p>
 
                     {/* معلومات العميل */}
-                    <div className="flex items-center justify-around w-[80%] mr-auto">
+                    <div className="flex items-center justify-between w-[80%] mr-auto">
                       <div className="flex  flex-row ">
                         <div className="w-10 h-10 rounded-full">
                           <img src={menIcon} />

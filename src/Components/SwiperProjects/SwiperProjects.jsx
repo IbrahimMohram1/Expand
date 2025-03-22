@@ -189,7 +189,7 @@ export default function ReactSlickProjects() {
 
   return (
     <>
-      <div className="container mx-auto ">
+      <div className="container mx-auto mt-3 ">
         <div className="relative  rounded-lg ">
           <Slider ref={sliderProjectsRef} {...settings}>
             {Projects.length > 0 ? (
