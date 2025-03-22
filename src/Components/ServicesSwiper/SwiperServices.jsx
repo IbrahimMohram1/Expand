@@ -297,7 +297,7 @@ export default function SwiperServices() {
                     <div
                       className={`MainBg text-white p-4 rounded-lg w-full flex flex-col ${
                         isActive && `justify-center `
-                      }justify-start items-center h-72 shadow-lg  transition-all duration-300 ${
+                      } justify-start items-center h-80 shadow-lg  transition-all duration-300 ${
                         isActive ? "scale-100" : "" // تكبير الـ active service
                       }`}
                       style={{
@@ -313,7 +313,7 @@ export default function SwiperServices() {
                       <div className="mt-3">
                         {IconComponent && (
                           <IconComponent
-                            className={`text-2xl ${isActive && `text-5xl`}`}
+                            className={`text-3xl ${isActive && `text-5xl`}`}
                           />
                         )}
                       </div>
@@ -321,7 +321,7 @@ export default function SwiperServices() {
                         <p
                           className={`mt-4  font-semibold ${
                             !isActive
-                              ? `V-Text text-lg `
+                              ? `V-Text  text-xl `
                               : `writing-horizontal-tb text-2xl`
                           } `}
                         >
