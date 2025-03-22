@@ -119,7 +119,7 @@ export default function SwiperServices() {
   // دالة لمعالجة تغيير الشريحة
   const handleAfterChange = () => {
     // تطبيق تأثيرات الهوفر بعد التغيير
-    setTimeout(setupHoverEffects, 50); // تأخير صغير للتأكد من اكتمال عملية التغيير
+    setTimeout(setupHoverEffects, 20); // تأخير صغير للتأكد من اكتمال عملية التغيير
   };
 
   // تأثير لإضافة مستمعات الأحداث في البداية وعند تغير البيانات
@@ -258,8 +258,8 @@ export default function SwiperServices() {
     centerMode: true,
     centerPadding: "0px",
     initialSlide: initialSlide, // تحديد الـ initialSlide
-    nextArrow: !id ? <SampleNextArrow /> : null,
-    prevArrow: !id ? <SamplePrevArrow /> : null,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     dots: !!id,
     afterChange: !id && isMediumOrLarger ? handleAfterChange : null, // إضافة afterChange callback فقط في الشاشات الكبيرة
 
@@ -295,7 +295,9 @@ export default function SwiperServices() {
                 <Link to={`/services/${service.id}`} key={service.id}>
                   <div className="relative mb-2 mx-1">
                     <div
-                      className={`MainBg text-white p-4 rounded-lg w-full flex flex-col justify-start items-center h-72 shadow-lg  transition-all duration-300 ${
+                      className={`MainBg text-white p-4 rounded-lg w-full flex flex-col ${
+                        isActive && `justify-center `
+                      }justify-start items-center h-72 shadow-lg  transition-all duration-300 ${
                         isActive ? "scale-100" : "" // تكبير الـ active service
                       }`}
                       style={{
@@ -310,11 +312,19 @@ export default function SwiperServices() {
                     >
                       <div className="mt-3">
                         {IconComponent && (
-                          <IconComponent className="text-2xl" />
+                          <IconComponent
+                            className={`text-2xl ${isActive && `text-5xl`}`}
+                          />
                         )}
                       </div>
                       <div className="">
-                        <p className="mt-4 text-lg font-semibold V-Text">
+                        <p
+                          className={`mt-4  font-semibold ${
+                            !isActive
+                              ? `V-Text text-lg `
+                              : `writing-horizontal-tb text-2xl`
+                          } `}
+                        >
                           {service.title}
                         </p>
                       </div>

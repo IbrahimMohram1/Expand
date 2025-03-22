@@ -173,7 +173,8 @@
       "id": 9,
       "title": "POWER & EQUIPMENT",
       "icon": "MdPower", 
-"image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",      "description": "We provide robust power solutions and equipment for various industries.",
+      "image": "https://res.cloudinary.com/dkpfxal7c/image/upload/v1742678222/6d767944ec_mf9ryj.jpg",
+      "image1": "https://res.cloudinary.com/dkpfxal7c/image/upload/v1742678228/2bfe1bfbc7_vwzzm4.jpg",
       "whatWeOffer": [
         "Generators",
         "Power distribution systems",
@@ -184,7 +185,8 @@
       "id": 10,
       "title": "DIGITAL AND ROBOTICS",
       "icon": "FaRobot", 
-"image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",      "description": "We deliver innovative digital and robotics solutions to transform industries.",
+      "image": "https://res.cloudinary.com/dkpfxal7c/image/upload/v1742678135/e89687f32c_kigzze.jpg",
+      "image1": "https://res.cloudinary.com/dkpfxal7c/image/upload/v1742678160/db1f4a2f8f_dztoud.jpg",
       "whatWeOffer": [
         "Powered Warehouse Inventory Management",
         "Robotics-Powered Picking & Packing Systems",

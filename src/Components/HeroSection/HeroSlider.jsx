@@ -63,7 +63,7 @@ export default function HeroSection() {
           {sections.map((section) => (
             <div
               key={section.id}
-              className={`md:w-1/3 w-full md:border-t-2  md:border-[#2C2A61] md:border-1 ${
+              className={`md:w-1/3 w-full md:border-t-2  md:border-[#fff] md:border-1 ${
                 hoveredId === section.id ? "mx-3" : "mx-0"
               }`}
               onMouseEnter={() => setHoveredId(section.id)}

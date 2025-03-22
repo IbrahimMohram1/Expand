@@ -14,18 +14,18 @@ export default function Footer() {
             <div className="md:w-1/3 w-full flex justify-center max-w-fit ">
               <img src={image} className="h-16" />
             </div>
-            <div className="md:w-1/3 max-w-fit w-full flex justify-start items-center flex-col  ">
+            <div className="md:w-1/3 max-w-fit w-full flex justify-start items-start  flex-col  ">
               <div className="flex md:justify-start items-center my-2 gap-x-3 justify-center ">
                 <div className="w-6 h-6 rounded-full bg-white text-black text-xs flex justify-center items-center">
                   <FiPhone />
                 </div>
-                <p>+996 12 692 4440</p>
+                <p>+966126924440</p>
               </div>
               <div className="flex md:justify-start items-center my-2 gap-x-3 justify-center">
                 <div className="w-6 h-6 rounded-full bg-white text-black text-xs flex justify-center items-center">
                   <HiOutlineMail />
                 </div>{" "}
-                <p>info@expand.com</p>
+                <p>info@expand.com.sa</p>
               </div>
             </div>
             <div className="md:w-1/3 w-full  max-w-fit">

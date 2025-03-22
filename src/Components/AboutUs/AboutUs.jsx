@@ -7,15 +7,12 @@ import { useEffect } from "react";
 import GoalsNumber from "../GoalsNumber/GoalsNumber";
 import TrustedBy from "../TrustedBy/TrustedBy";
 import SecSection from "../SecondSection/SecSection";
+import Mission from "../MissionAndVission/Mission";
 export default function AboutUs() {
-  let { MissionAndVision, Mission } = useContext(ContextData);
-  useEffect(() => {
-    MissionAndVision();
-  }, []);
   return (
     <>
       <MainSection image={MainImage} text="About Us" />
-
+      <Mission />
       <SecSection
         image={imageShip}
         who={"Who We Are"}

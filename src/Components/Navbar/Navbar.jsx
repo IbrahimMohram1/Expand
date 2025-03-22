@@ -105,8 +105,8 @@ export default function Navbar() {
                 <li>
                   <p className="flex gap-x-2 items-center">
                     <FaPhoneAlt />
-                    <a href="tel:01020181248" className="cursor-pointer">
-                      01020181248
+                    <a href="tel:+966126924440" className="cursor-pointer">
+                      +966126924440
                     </a>
                   </p>
                 </li>
@@ -114,10 +114,10 @@ export default function Navbar() {
                   <p className="flex gap-x-2 items-center">
                     <FaEnvelope />
                     <a
-                      href="mailto:ibrahimmohram7@gmail.com"
+                      href="mailto:info@expand.com.sa"
                       className="cursor-pointer"
                     >
-                      ibrahimmohram7@gmail.com
+                      info@expand.com.sa
                     </a>
                   </p>
                 </li>

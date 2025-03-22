@@ -69,11 +69,46 @@ p{
     }
 }
 .active p {
-    border-bottom: 1px solid #2C2A61;
+    border-bottom: 1px solid #D74D1E;
     width: max-content;
     padding-bottom: 5px;
         /* Add space between text and border */
 }
+
+.active{
+    color: #D74D1E ;
+}
 .noLineHeight{
     line-height: normal !important;
+}
+
+/* styles.css */
+.partial-border {
+    position: relative;
+}
+
+.partial-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    /* جزء من العرض */
+    height: 2px;
+    /* سماكة الحد */
+    background-color: #dc2626;
+    /* لون الحد (red-600) */
+}
+
+.partial-border::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    /* سماكة الحد */
+    height: 50%;
+    /* جزء من الارتفاع */
+    background-color: #dc2626;
+    /* لون الحد (red-600) */
 }

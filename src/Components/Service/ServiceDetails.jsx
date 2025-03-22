@@ -18,8 +18,9 @@ export default function Service() {
   return (
     <>
       <MainSection image={MainImage} text="Services" />
-
-      <h2 className="mainColor text-2xl my-3 text-center">Our Services</h2>
+      <div className="container">
+        <h2 className="mainColor text-2xl my-3 text-center">Our Services</h2>
+      </div>
 
       <div className="w-[85%] mx-auto overflow-hidden">
         <div className="flex justify-center md:flex-row  flex-row  text-center flex-wrap">
