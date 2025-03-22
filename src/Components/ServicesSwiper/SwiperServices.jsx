@@ -341,7 +341,7 @@ export default function SwiperServices() {
                         >
                           <div className="flex justify-around flex-col items-center w-full h-full p-2">
                             <div>
-                              <p className="text-xs">{service.title}</p>
+                              <p className="text-xl">{service.title}</p>
                             </div>
                             <div>
                               <p className="text-xs">
