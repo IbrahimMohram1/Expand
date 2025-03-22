@@ -40,7 +40,7 @@ export default function Footer() {
                   {" "}
                   <li>Services</li>
                 </Link>
-                <Link to={"/Projects"}>
+                <Link to={"/Projects/101"}>
                   {" "}
                   <li>Projects</li>
                 </Link>

@@ -14,7 +14,7 @@ export default function Service() {
   }
   useEffect(() => {
     GetServices();
-  }, [id, service]);
+  }, [id]);
   return (
     <>
       <MainSection image={MainImage} text="Services" />
@@ -51,7 +51,7 @@ export default function Service() {
           <div className="flex justify-center items-stretch md:flex-row flex-col gap-4">
             <div className="md:w-1/2 w-full">
               <img
-                src={service.image}
+                src={service.image1}
                 alt={service.title}
                 className="w-full h-full object-cover rounded-lg"
               />

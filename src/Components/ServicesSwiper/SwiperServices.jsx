@@ -335,7 +335,7 @@ export default function SwiperServices() {
                             </div>
                             <div>
                               <p className="text-xs">
-                                {service?.description
+                                {(service?.description ?? "")
                                   .split(" ")
                                   .splice(0, 20)
                                   .join(" ")}

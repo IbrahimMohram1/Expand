@@ -44,7 +44,9 @@
       "id": 1,
       "title": "ELECTRICAL",
       "icon": "MdElectricBolt",
-      "image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",
+      "image":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657504/0ba6ecef59_oczl2q.jpg",
+      "image1":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657524/e7950831fe_s39fwq.jpg",
+
       "description": "Electrical systems are the foundation of modern living and industry. They enable the functionality of homes, businesses, and factories, ensuring seamless operations and convenience. Reliable electrical systems minimize downtime, improve energy efficiency, and enhance safety, protecting people and assets. Whether for lighting, powering machinery, or maintaining critical systems, well-maintained electrical infrastructure is vital for both productivity and security. Moreover, efficient electrical solutions contribute to sustainability by reducing energy wastage and optimizing power usage.",
 
       "whatWeOffer": [
@@ -86,7 +88,8 @@
       "id": 2,
       "title": "SAFETY AND SECURITY",
       "icon": "MdSecurity", 
-"image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",      "description": "Our safety and security solutions ensure the protection of your assets and personnel.",
+      "image":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657568/9113799173_jzrrzj.jpg",
+      "image1":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657575/58cc3b529b_qrokgq.png",
       "whatWeOffer": [
         "CCTV installation",
         "Access control systems",
@@ -97,7 +100,8 @@
       "id": 3,
       "title": "AIRPORT HANDLING ",
       "icon": "GiCommercialAirplane", 
-"image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",      "description": "We specialize in advanced airport systems to enhance operational efficiency and passenger experience.",
+      "image":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657612/93f1205805_ln66fs.jpg",
+      "image1":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657627/5654cc57f0_t8g0ga.jpg",
       "whatWeOffer": [
         "Baggage handling systems",
         "Passenger boarding bridges",
@@ -108,7 +112,8 @@
       "id": 4,
       "title": "MARINE EQUIPMENT",
       "icon": "FaShip", 
-"image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",      "description": "We offer state-of-the-art marine equipment for shipping and offshore industries.",
+      "image":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657837/47703d7e96_i8etjf.jpg",
+      "image1":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657876/cb8b3b9ef3_c9dnbe.jpg",
       "whatWeOffer": [
         "Navigation systems",
         "Marine communication systems",
@@ -119,7 +124,8 @@
       "id": 5,
       "title": "EV EQUIPMENT",
       "icon": "FaChargingStation", 
-"image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",      "description": "We provide cutting-edge electric vehicle (EV) charging solutions.",
+      "image":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657909/4e04b0982d_xfmff9.jpg",
+      "image1":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657925/5bf2ec48ae_otfxgx.jpg",
       "whatWeOffer": [
         "EV charging stations",
         "Battery management systems",
@@ -130,7 +136,8 @@
       "id": 6,
       "title": "TECHNOLOGICAL ",
       "icon": "FaBarcode", 
-"image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",      "description": "Our tech solutions streamline operations and enhance productivity.",
+      "image":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657967/a649a41c9e_udp2fx.jpg",
+      "image1":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657958/c704ac12c4_djnsmb.jpg",
       "whatWeOffer": [
         "Barcode systems",
         "Inventory management",
@@ -141,7 +148,9 @@
       "id": 7,
       "title": "STORAGE EQUIPMENT",
       "icon": "MdSdStorage", 
-"image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",      "description": "We offer reliable storage solutions for data and physical assets.",
+      "image": "https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657435/0428c6a0f4_iqj3z1.jpg",
+            "image1": "https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657432/ebd332d99c_csq8yw.jpg",
+
       "whatWeOffer": [
         "Data storage systems",
         "Warehouse management",
@@ -152,7 +161,8 @@
       "id": 8,
       "title": "WORKSHOP EQUIPMENT",
       "icon": "FaChargingStation", 
-"image": "https://s3-alpha-sig.figma.com/img/f1a6/f78e/e791105bcff39f1be4fdb18c683b5cbe?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gxioPLA773tOm-RanWQkvvc85AdeIxBd2lVS64QBVP36f-nX-1J4ObdzgqhTuN8z-gaSpZ~fdxugHaN2AgiswZBkp3mek1s1CIid33L9LC5cCKkprwXxn9BQZmwouQapjSgNqU-YQkO4NHkmq-~av91Le1GMtI6o71qXS4txeN6nKVsPf6ieGkgHuIqJB1qaetYbqWWzurG2hfYG802~GzNhnuGSxqqFl0vVE-eACMdule2OnzeBCC6Z7rF1JB5eKdIc98tcXOtPYNKm4UAfMxgSPyxmFPPQ4wxto3bazedXz~uzSPBNJ2HpLV5GrhigPoI3RII5R5RJtvzjy501iw__",      "description": "We supply high-quality tools for workshops and industrial use.",
+      "image": "https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657267/cdf378525a_dlfwc3.jpg",
+      "image1": "https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657274/4be7023ea1_mcwfcw.jpg",
       "whatWeOffer": [
         "Power tools",
         "Hand tools",
