@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <>
       <HeroSlider />
-      <div className="container">
+      <div className="container md:my-0 my-8">
         <div className=" text-white  md:p-10 flex flex-col md:flex-row items-center mx-auto gap-6">
           <div className="md:w-1/2 w-full">
             <div className="flex items-center justify-center ">

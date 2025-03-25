@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import { ContextData } from "../Context/ContextData";
 import { useEffect } from "react";
 import Slider from "react-slick";
@@ -7,6 +7,9 @@ import Larrow from "../../assets/LeftArrow.png";
 import menIcon from "../../assets/menIcon.png";
 export default function Feedback() {
   const { Feedback, getFeedBack } = useContext(ContextData);
+  const FeedBackSlider = useRef(null);
+  const FeedBackSwiper = useRef(null);
+
   useEffect(() => {
     getFeedBack();
   }, []);
@@ -60,7 +63,7 @@ export default function Feedback() {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    centerMode: true,
+    centerMode: false,
     centerPadding: "0px",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -74,13 +77,21 @@ export default function Feedback() {
   };
   return (
     <>
-      <div className="container mx-auto my-8 overflow-hidden">
+      <div
+        className="container mx-auto my-8 overflow-hidden"
+        ref={FeedBackSwiper}
+      >
         <div className="flex justify-center items-center ">
-          <Slider {...settings}>
+          <Slider
+            ref={FeedBackSlider}
+            {...settings}
+            key={Feedback.length} // Add this to force re-render when data changes
+          >
+            {" "}
             {Feedback.length > 0 ? (
               Feedback.map((item) => (
                 <div className="flex " key={item.id}>
-                  <div className=" bg-white border p-4 h-72 flex flex-col gap-0 rounded-lg shadow-lg  mx-1">
+                  <div className=" bg-white border p-4 h-72 flex flex-col gap-0 rounded-lg shadow-lg  mx-1 ">
                     {/* أيقونة الاقتباس */}
                     <div>
                       <svg

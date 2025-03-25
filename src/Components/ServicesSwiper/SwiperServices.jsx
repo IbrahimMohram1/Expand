@@ -251,7 +251,7 @@ export default function SwiperServices() {
 
   const settings = {
     infinite: true,
-    autoplay: !id, // إيقاف الـ autoplay لو فيه id
+    autoplay: false, // إيقاف الـ autoplay لو فيه id
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -293,12 +293,13 @@ export default function SwiperServices() {
 
               return (
                 <Link to={`/services/${service.id}`} key={service.id}>
-                  <div className="relative mb-2 mx-1">
+                  <div className="relative mb-2 mx-1 group">
+                    {/* العنصر الرئيسي */}
                     <div
                       className={`MainBg text-white p-4 rounded-lg w-full flex flex-col ${
-                        isActive && `justify-center `
-                      } justify-start items-center h-80 shadow-lg  transition-all duration-300 ${
-                        isActive ? "scale-100" : "" // تكبير الـ active service
+                        isActive && `justify-center`
+                      } justify-start items-center h-80 shadow-lg transition-all duration-300 ${
+                        isActive ? "scale-100" : ""
                       }`}
                       style={{
                         backgroundImage: isActive
@@ -307,9 +308,9 @@ export default function SwiperServices() {
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                         borderRadius: isActive ? "0.3rem" : "",
-                        zIndex: 20, // العنصر الرئيسي
                       }}
                     >
+                      {/* المحتوى الأساسي */}
                       <div className="mt-3">
                         {IconComponent && (
                           <IconComponent
@@ -319,47 +320,51 @@ export default function SwiperServices() {
                       </div>
                       <div className="">
                         <p
-                          className={`mt-4  font-semibold ${
+                          className={`mt-4 font-semibold ${
                             !isActive
-                              ? `V-Text  text-xl `
+                              ? `V-Text text-xl`
                               : `writing-horizontal-tb text-2xl`
-                          } `}
+                          }`}
                         >
                           {service.title}
                         </p>
                       </div>
 
-                      {/* Overlay يظهر عند الهوفر */}
-                      {!id ? (
-                        <div
-                          className="absolute inset-0 bg-black/70 rounded-lg flex flex-col justify-center w-full h-full items-center opacity-0 hover:opacity-100 transition-opacity duration-700 text-white text-center  "
-                          style={{
-                            backgroundImage: `url(${service.image})`,
-                            backgroundSize: "cover",
-                            backgroundPosition: "center",
-                          }}
-                        >
-                          <div className="flex justify-around flex-col items-center w-full h-full p-2">
-                            <div>
-                              <p className="text-xl">{service.title}</p>
+                      {/* طبقة الهوفر المعدلة */}
+                      {!id && (
+                        <div className="absolute inset-0 rounded-lg overflow-hidden">
+                          {/* طبقة الصورة مع الفلتر */}
+                          <div
+                            className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+                            style={{
+                              backgroundImage: `url(${service.image})`,
+                              filter: "brightness(0.5)",
+                            }}
+                          ></div>
+
+                          {/* طبقة المحتوى فوق الفلتر */}
+                          <div className="absolute inset-0 z-10 flex justify-center items-center flex-col text-center p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                            <div className="flex items-center gap-y-3 flex-col space-x-2 w-full">
+                              {IconComponent && (
+                                <IconComponent className="text-3xl flex-shrink-0 text-white drop-shadow-[0_2px_2px_rgba(0,0,0,1)]" />
+                              )}
+                              <p className="text-xl flex-grow text-start text-white drop-shadow-[0_2px_2px_rgba(0,0,0,1)]">
+                                {service.title}
+                              </p>
                             </div>
-                            <div>
-                              <p className="text-xs">
+                            <div className="mt-2">
+                              <p className="text-xs text-white drop-shadow-[0_1px_1px_rgba(0,0,0,1)]">
                                 {(service?.description ?? "")
                                   .split(" ")
                                   .splice(0, 20)
                                   .join(" ")}
                               </p>
                             </div>
-                            <Link to={`/services/${service.id}`}>
-                              <button className="mt-3 bg-white text-black px-4 py-1 rounded-lg text-sm text-nowrap">
-                                View Details
-                              </button>
-                            </Link>
+                            <button className="mt-3 bg-white text-black px-4 py-1 rounded-lg text-sm text-nowrap">
+                              View Details
+                            </button>
                           </div>
                         </div>
-                      ) : (
-                        ""
                       )}
                     </div>
                   </div>

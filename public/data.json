@@ -46,9 +46,8 @@
       "icon": "MdElectricBolt",
       "image":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657504/0ba6ecef59_oczl2q.jpg",
       "image1":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657524/e7950831fe_s39fwq.jpg",
-
-      "description": "Electrical systems are the foundation of modern living and industry. They enable the functionality of homes, businesses, and factories, ensuring seamless operations and convenience. Reliable electrical systems minimize downtime, improve energy efficiency, and enhance safety, protecting people and assets. Whether for lighting, powering machinery, or maintaining critical systems, well-maintained electrical infrastructure is vital for both productivity and security. Moreover, efficient electrical solutions contribute to sustainability by reducing energy wastage and optimizing power usage.",
-
+      "description":"Providing wiring, lighting, generators, and full electrical solutions for residential, commercial, and industrial projects with high efficiency and safety.  "
+,
       "whatWeOffer": [
         {
           "name": "RESIDENTIAL",
@@ -88,6 +87,7 @@
       "id": 2,
       "title": "SAFETY AND SECURITY",
       "icon": "MdSecurity", 
+      "description":"Supplying fire prevention systems, PPE, security seals, and safety equipment to ensure workplace protection and regulatory compliance.  ",
       "image":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657568/9113799173_jzrrzj.jpg",
       "image1":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657575/58cc3b529b_qrokgq.png",
       "whatWeOffer": [
@@ -102,6 +102,7 @@
       "icon": "GiCommercialAirplane", 
       "image":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657612/93f1205805_ln66fs.jpg",
       "image1":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657627/5654cc57f0_t8g0ga.jpg",
+      "description": "Offering baggage handling tools, security test baggage, trolleys, and seals to enhance airport operations and security.  ",
       "whatWeOffer": [
         "Baggage handling systems",
         "Passenger boarding bridges",
@@ -112,8 +113,10 @@
       "id": 4,
       "title": "MARINE EQUIPMENT",
       "icon": "FaShip", 
+
       "image":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657837/47703d7e96_i8etjf.jpg",
       "image1":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657876/cb8b3b9ef3_c9dnbe.jpg",
+      "description": "Providing life jackets, marine communication devices, first aid kits, and diving equipment for safe and efficient marine operations.  ",
       "whatWeOffer": [
         "Navigation systems",
         "Marine communication systems",
@@ -126,6 +129,7 @@
       "icon": "FaChargingStation", 
       "image":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657909/4e04b0982d_xfmff9.jpg",
       "image1":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657925/5bf2ec48ae_otfxgx.jpg",
+      "description": "Supplying EV charging testers, electrical testing kits, and insulated tools to support electric vehicle infrastructure and maintenance.  ",
       "whatWeOffer": [
         "EV charging stations",
         "Battery management systems",
@@ -138,6 +142,7 @@
       "icon": "FaBarcode", 
       "image":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657967/a649a41c9e_udp2fx.jpg",
       "image1":"https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657958/c704ac12c4_djnsmb.jpg",
+      "description": "Offering data storage, cybersecurity, CCTV, routers, and firewall solutions for enhanced digital security and connectivity.  ",
       "whatWeOffer": [
         "Barcode systems",
         "Inventory management",
@@ -150,7 +155,7 @@
       "icon": "MdSdStorage", 
       "image": "https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657435/0428c6a0f4_iqj3z1.jpg",
             "image1": "https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657432/ebd332d99c_csq8yw.jpg",
-
+            "description": "Providing lifting belts, chain hoists, shelves, and storage containers for secure and efficient material handling.  ",
       "whatWeOffer": [
         "Data storage systems",
         "Warehouse management",
@@ -163,6 +168,7 @@
       "icon": "FaChargingStation", 
       "image": "https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657267/cdf378525a_dlfwc3.jpg",
       "image1": "https://res.cloudinary.com/dkpfxal7c/image/upload/v1742657274/4be7023ea1_mcwfcw.jpg",
+      "description": "Supplying hydraulic jacks, air compressors, torque wrenches, and oil drainers for industrial and mechanical workshops.  ",
       "whatWeOffer": [
         "Power tools",
         "Hand tools",
@@ -175,6 +181,7 @@
       "icon": "MdPower", 
       "image": "https://res.cloudinary.com/dkpfxal7c/image/upload/v1742678222/6d767944ec_mf9ryj.jpg",
       "image1": "https://res.cloudinary.com/dkpfxal7c/image/upload/v1742678228/2bfe1bfbc7_vwzzm4.jpg",
+      "description": "Offering fasteners, C-channels, plastic conduits, and fittings for construction and industrial applications.  ",
       "whatWeOffer": [
         "Generators",
         "Power distribution systems",
@@ -187,6 +194,7 @@
       "icon": "FaRobot", 
       "image": "https://res.cloudinary.com/dkpfxal7c/image/upload/v1742678135/e89687f32c_kigzze.jpg",
       "image1": "https://res.cloudinary.com/dkpfxal7c/image/upload/v1742678160/db1f4a2f8f_dztoud.jpg",
+      "description": "Delivering AI, IoT, and automation solutions for warehouse management, predictive maintenance, and operational efficiency.",
       "whatWeOffer": [
         "Powered Warehouse Inventory Management",
         "Robotics-Powered Picking & Packing Systems",

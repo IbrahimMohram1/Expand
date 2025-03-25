@@ -4,6 +4,7 @@ import MainSection from "../MainSection/MainSection";
 import { ContextData } from "../Context/ContextData";
 import SwiperServices from "../ServicesSwiper/SwiperServices";
 import { Link, NavLink, useParams } from "react-router-dom";
+import Feedback from "../Feedback/Feedback";
 export default function Service() {
   let { GetServices, Services } = useContext(ContextData);
   let { id } = useParams();
@@ -15,6 +16,22 @@ export default function Service() {
   useEffect(() => {
     GetServices();
   }, [id]);
+  const settings = {
+    infinite: true,
+    autoplay: false, // إيقاف الـ autoplay لو فيه id
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: "0px",
+    dots: true,
+
+    responsive: [
+      { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+      { breakpoint: 640, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+      { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+    ],
+  };
   return (
     <>
       <MainSection image={MainImage} text="Services" />
@@ -101,6 +118,7 @@ export default function Service() {
           </div>
         </div>
       </div>
+      <Feedback />
     </>
   );
 }

@@ -10,19 +10,19 @@ export default function HeroSection() {
       id: 1,
       title: "Manufacture & Distribution",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, explicabo.",
+        "Products are expertly manufactured to align with client-specific designs, ensuring accuracy and top-tier quality.",
     },
     {
       id: 2,
       title: "Products",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, explicabo.",
+        "A wide selection of reliable products is available, tailored to suit various industries and client demands.",
     },
     {
       id: 3,
       title: "Install",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, explicabo.",
+        "Certified professionals deliver seamless, efficient installations with minimal disruption.",
     },
   ];
 
@@ -64,13 +64,13 @@ export default function HeroSection() {
             <div
               key={section.id}
               className={`md:w-1/3 w-full md:border-t-2  md:border-[#fff] md:border-1 ${
-                hoveredId === section.id ? "mx-3" : "mx-0"
+                hoveredId === section.id ? "" : "mx-0"
               }`}
               onMouseEnter={() => setHoveredId(section.id)}
               onMouseLeave={() => setHoveredId(null)}
             >
               <div className="flex items-start gap-x-2 text-white flex-col mt-2">
-                <div className="flex flex-row gap-x-2 duration-1000">
+                <div className="flex flex-row gap-x-2 duration-1000 ">
                   {hoveredId === section.id ? (
                     <IoIosArrowDown className="rounded-full bg-[#D74D1E] p-1 transition-all duration-1000" />
                   ) : (
@@ -79,7 +79,7 @@ export default function HeroSection() {
                   <p className="text-[20px]">{section.title}</p>
                 </div>
                 <span
-                  className={`w-[85%] text-left text-xs transition-all duration-500 overflow-hidden ${
+                  className={`w-[85%] text-left text-xs transition-all duration-500 overflow-hidden mt-2 ${
                     hoveredId === section.id
                       ? "h-auto max-h-40 opacity-100 mb-5"
                       : "max-h-0 opacity-0"
