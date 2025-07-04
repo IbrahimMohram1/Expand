@@ -2,7 +2,11 @@ import { useState } from "react";
 
 import "./App.css";
 import "./Font.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  createHashRouter,
+  RouterProvider,
+} from "react-router-dom";
 import Home from "./Components/Home/Home";
 import Layout from "./Components/Layout/Layout";
 import DataProvider from "./Components/Context/ContextData";
@@ -11,7 +15,7 @@ import Service from "./Components/Service/ServiceDetails";
 import Projects from "./Components/ProjectsPage/Projects";
 import NotFoundPage from "./Components/NotFoundPage/NotFoundPage";
 
-let routes = createBrowserRouter([
+let routes = createHashRouter([
   {
     path: "",
     element: <Layout />,

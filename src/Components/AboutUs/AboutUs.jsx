@@ -8,6 +8,7 @@ import GoalsNumber from "../GoalsNumber/GoalsNumber";
 import TrustedBy from "../TrustedBy/TrustedBy";
 import SecSection from "../SecondSection/SecSection";
 import Mission from "../MissionAndVission/Mission";
+import Form from "../Form/Form";
 export default function AboutUs() {
   return (
     <>
@@ -49,6 +50,8 @@ export default function AboutUs() {
       <GoalsNumber />
 
       <TrustedBy />
+
+      <Form />
     </>
   );
 }

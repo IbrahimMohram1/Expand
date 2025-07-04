@@ -11,7 +11,7 @@ export default function MainSection({ image, text }) {
             className="w-full h-full object-cover imageResponsive"
             style={{
               objectPosition: "42%", // للشاشات الصغيرة
-              "@media (min-width: 768px)": {
+              "@media (minWidth: 768px)": {
                 // 768px هو حجم md في Tailwind الافتراضي
                 objectPosition: "50% 50%", // للشاشات المتوسطة وما فوق
               },

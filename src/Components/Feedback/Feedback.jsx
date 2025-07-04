@@ -23,7 +23,6 @@ export default function Feedback() {
         }}
         onClick={onClick}
       >
-        {/* تصميم الشيفرون - سهمين رمادي وسهم برتقالي */}
         <img
           src={Rarrow}
           alt="Next Arrow"
@@ -79,20 +78,19 @@ export default function Feedback() {
     <>
       <div
         className="container mx-auto my-8 overflow-hidden"
-        ref={FeedBackSwiper}
+        ref={FeedBackSlider}
       >
         <div className="flex justify-center items-center ">
           <Slider
-            ref={FeedBackSlider}
+            ref={FeedBackSwiper}
             {...settings}
-            key={Feedback.length} // Add this to force re-render when data changes
+            key={Feedback.length} 
           >
             {" "}
             {Feedback.length > 0 ? (
               Feedback.map((item) => (
                 <div className="flex " key={item.id}>
                   <div className=" bg-white border p-4 h-72 flex flex-col gap-0 rounded-lg shadow-lg  mx-1 ">
-                    {/* أيقونة الاقتباس */}
                     <div>
                       <svg
                         version="1.1"
@@ -151,7 +149,6 @@ export default function Feedback() {
                       </div>
                     </div>
 
-                    {/* التقييم بالنجوم */}
                   </div>
                 </div>
               ))
